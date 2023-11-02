@@ -71,7 +71,7 @@ const userController = {
     updateLogin: async (req, res) => {
         const {name, email, password, confirmpassword} = req.body;
         const id =  req.params.id;
-        const user = await User.findById(id).select("-password, -confirmpassword");
+        const user = await User.findById(id).select("-password").select("-confirmpassword");
 
         if(name){
             user.name = name;
@@ -107,7 +107,10 @@ const userController = {
     getCurrentUser: async (req, res) => {
         const user = req.user;
 
-        res.status(200).json(user);
+        res.status(200).json({
+            user,
+            msg:"Acessado"
+        });
     }
 };
 
