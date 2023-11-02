@@ -13,7 +13,28 @@ const generateToken = (id) => {
 
 const userController = {
     signLogin: async(req, res) => {
-        res.send("Login");
+        const {email, password} = req.body;
+        const id =  req.params.id;
+        const user = await User.findOne({email})
+
+        //check if user exists
+        if(!user){
+            res.status(404).json({errors: ["User not found!"]});
+            return;
+        }
+
+        //check if password matches
+        if(!(await bcrypt.compare(password, user.password))){
+            res.status(422).json({errors: ["Password don't matches!"]});
+            return;
+        }
+
+        //Return useer with token
+        res.status(201).json({
+            email: email,
+            token: generateToken(id),
+            msg: "The login it's done!"
+        });
     },
     
     getAllLogin: async(req, res) => {
@@ -53,15 +74,11 @@ const userController = {
         const user = await User.findById(id).select("-password, -confirmpassword");
 
         if(name){
-            const salt = await bcrypt.genSalt();
-            const nameHash = await bcrypt.hash(name, salt); 
-            user.name = nameHash;
+            user.name = name;
         }
         
         if(email){
-            const salt = await bcrypt.genSalt();
-            const emailHash = await bcrypt.hash(email, salt); 
-            user.email = emailHash;
+            user.email = email;
         }
         
         if(password){
@@ -85,6 +102,12 @@ const userController = {
             id: id,
             token: generateToken(id),
             msg: "The project has been updated!"});
+    },
+
+    getCurrentUser: async (req, res) => {
+        const user = req.user;
+
+        res.status(200).json(user);
     }
 };
 
