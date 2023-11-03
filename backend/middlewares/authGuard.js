@@ -14,8 +14,7 @@ const authGuard = async  (req, res, next) => {
     //check if token is valid
     try {
         const verified = jwt.verify(token, jwtSecret);
-        //Bug na verificação de Token, mesmo com o token correto não acessa. Causa provável: Erro de lógica.
-        req.user = await User.findOne(verified._id).select("-password").select("-confirmpassword");
+        req.user = await User.findOne(verified.id).select("-password").select("-confirmpassword");
 
         next();
     } catch (error) {
