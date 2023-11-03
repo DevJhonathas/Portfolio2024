@@ -1,4 +1,4 @@
-![screenshot](./teste/Portfolio_2024.png)
+![screenshot](./resource/Portfolio_2024.png)
 ### *Sobre o Projeto*
 O projeto se consiste na criação do meu primeiro portfolio. Nele estarei demonstrando tanto minhas habilidades como desenvolvedor Frontend quanto desenvolvedor Backend, acredito que mostrará também minhas habilidades no hobby de designer. O projeto irar ter uma API(Application Programming Interface) no Backend com todas as rotas necessárias para o funcionamento do site. 
 
@@ -47,4 +47,4 @@ O nome Portfolio 2024 é apenas por intuito informativo, já que informa quando 
 
 
 ## Designer  
-![screenshot](./teste//designer.png)
+![screenshot](./resource/Designer.png)
