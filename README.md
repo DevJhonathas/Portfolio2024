@@ -10,17 +10,17 @@ O nome Portfolio 2024 é apenas por intuito informativo, já que informa quando 
 
 ### *Sumário:*
 * Para Front-end:
-    * [Designer.](#designer)
-    * [Bibliotecas.](#bibliotecas)
-    * [Páginas.](#paginas)
-    * [Estilização.](#estilização)
+    * [Designer](#designer)
+    * [Bibliotecas](#bibliotecas)
+    * [Páginas](#paginas)
+    * [Estilização](#estilização)
 
 * Para Back-end:
-    * [Crud.](#crud)
-    * [Rotas.](#rotas)
-    * [Cadastro de projetos.](#cadastro_de_projetos)
-    * [Banco de dados.](#banco_de_dados)
-    * [Postman.](#postman)
+    * [Crud](#crud)
+    * [Rotas](#rotas)
+    * [Cadastro de projetos](#cadastro_de_projetos)
+    * [Banco de dados](#banco_de_dados)
+    * [Postman](#postman)
 
 ### *Linguagens, bibliotecas e banco de dados:*
 * **Front-end**

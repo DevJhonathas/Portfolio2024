@@ -5,6 +5,6 @@ const router = express();
 router.use("/users", require("./userRoutes"));
 
 //Project router
-router.use("/", require("./projectsRoutes"));
+router.use("/projects", require("./projectsRoutes"));
 
 module.exports = router;

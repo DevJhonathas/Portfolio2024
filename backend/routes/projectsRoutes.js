@@ -1,25 +1,32 @@
 const router = require("express").Router();
 
+//Controller
 const projectController = require("../controllers/projectController");
 
-router.route("/projects")
-.post((req, res) => projectController
-.create(req, res));
+//Middlewares
+const validate = require("../middlewares/handleValidation");
+const authGuard = require("../middlewares/authGuard");
+const { imageUpload } = require("../middlewares/imageUploads");
+const { photoInsertValidation, photoUpdtadeValidation } = require("../middlewares/projectsValidation");
 
-router.route("/projects")
+router.route("/")
+.post(authGuard, imageUpload.single("image"), photoInsertValidation(), validate,(req, res) => projectController
+.insertProject(req, res));
+
+router.route("/")
 .get((req, res) => projectController
-.getAll(req, res));
+.getAllProjects(req, res));
 
-router.route("/projects/:id")
+router.route("/:id")
 .get((req, res) => projectController
-.get(req, res));  
+.getProject(req, res));  
 
-router.route("/projects/:id")
+router.route("/:id")
 .delete((req, res) => projectController
-.delete(req, res));
+.deleteProject(req, res));
 
-router.route("/projects/:id")
-.put((req, res) => projectController
-.update(req, res));
+router.route("/:id")
+.put(authGuard, photoUpdtadeValidation(), validate, (req, res) => projectController
+.updateProject(req, res));
 
 module.exports = router;
