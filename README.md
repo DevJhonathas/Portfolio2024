@@ -27,7 +27,6 @@ O nome Portfolio 2024 é apenas por intuito informativo, já que informa quando 
     * Javascript
     * HTML/CSS
     * React-router-dom
-    * Axio
     * Redux 
     * Redux toolkit
 
