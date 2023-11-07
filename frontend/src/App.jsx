@@ -1,4 +1,5 @@
 import React from 'react';
+import "./global.css"
 
 // Router Dom
 import { BrowserRouter, Routes, Route } from "react-router-dom"

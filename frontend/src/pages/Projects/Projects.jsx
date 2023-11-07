@@ -1,28 +1,34 @@
+//redux
+import {login, reset} from   "../../slices/authSlice";
+import { UseSelector,  useDispatch, useSelector } from "react-redux";
+
+//Hooks
 import { useState,  useEffect } from "react";
 
 const Projects = () => {
   const [projetos, setProjetos] = useState([]);
-//testando se a api esta operando normalmente 
-  useEffect(() => {
-    fetch('http://localhost:5000/projects')
-    .then(res => res.json())
-    .then(data => {
-      setProjetos(data);
-    })
-  }, [])
 
+  const dispath = useDispatch();
+
+  const {loading,  error} =  useSelector((state) => state.auth);
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  }
   return (
-    <ul>
-    {projetos.map(project => {
-    return (
-      <li key={project._id}>
-      <h1>{project.title}</h1>
-        <p>{project.description}</p>
-        <p>{project.image}</p>
-        <p>{project.language}</p>
-      </li>
-    )})}
-  </ul>
+    <div className="login">
+      <h1>Área De Administrador</h1>
+      <p>Gentileza preencha os campos para poder entrar como administrador.</p>
+
+      <form onSubmit={handleSubmit}>
+        <input type="text" placeholder="Login" required/>
+        <input type="email" placeholder="Email" required/>
+        <input type="password" placeholder="Senha" required/>
+        <input type="password" placeholder="Confirme a senha" required/>
+        <input type="submit"  value="Entrar" />
+      </form>
+    </div>
   )
 }
 
