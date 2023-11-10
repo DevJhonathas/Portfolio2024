@@ -4,12 +4,14 @@ const {User: User} = require("../models/User");
 const userUpdateValidation = () => {
     return [
         body("name")
-            .optional()
+            .isString()
+            .withMessage("The name must have at least 3 characters.")
             .isLength({min: 3})
             .withMessage("The name must have at least 3 characters."),
 
         body("email")
-            .optional()
+            .isString()
+            .withMessage("The name must have at least 3 characters.")
             .isEmail()
             .withMessage("Please, Enter the administrator's email."),
 
@@ -18,16 +20,6 @@ const userUpdateValidation = () => {
             .withMessage("Password confirmation is necessary.")
             .isLength({min: 5})
             .withMessage("The password must have at least 5 characters."),
-
-        body("confirmpassword")
-            .isString()
-            .withMessage("Password confirmation is necessary.")
-            .custom((value, { req }) => {
-                if(value != req.body.password){
-                throw new Error("As senhas não são iguais.");
-            }
-            return true;
-        }),
     ];
 };
 

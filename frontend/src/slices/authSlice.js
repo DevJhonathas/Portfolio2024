@@ -12,17 +12,21 @@ const initialState =  {
 }  
 
 //sing in
-export  const login = createAsyncThunk("auth/login", 
+export const login = createAsyncThunk("auth/login", 
     async (user, thunkAPI) => {
         const data = await  authService.login(user);
 
         // check for errors
-        if(data.erros) {
+        if(data.errors) {
             return thunkAPI.rejectWithValue(data.errors[0]);
         }
 
         return data;
     });
+
+export const logout = createAsyncThunk("auth/logout", async () => {
+    await authService.logout();
+})
 
 export const authSlice = createSlice({
     name: "auth",
@@ -47,8 +51,13 @@ export const authSlice = createSlice({
             state.loading = false
             state.error = action.payload;
             state.user = null;
+        }).addCase(logout.fulfilled, (state, action) => {
+            state.loading = false
+            state.success = false;
+            state.error = null;
+            state.user = null;
         });
-    },
+    }
 });
 
 export const { reset } = authSlice.actions;

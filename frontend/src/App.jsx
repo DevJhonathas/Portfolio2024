@@ -12,11 +12,13 @@ import Dashboard from './pages/Auth/Dashboard/Dashboard';
 import Create from './pages/Auth/Create/Create';
 import Login from './pages/Auth/Login/Login';
 import Update from './pages/Auth/Update/Update';
+import Navbar from './components/Navbar';
 
 const App = () => {
   return (
     <div>
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />

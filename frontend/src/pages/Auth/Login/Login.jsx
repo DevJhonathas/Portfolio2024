@@ -2,8 +2,11 @@
 import "./Login.css";
 
 //redux
-import {login, reset} from   "../../slices/authSlice";
+import { reset, login } from "../../../slices/authSlice";
 import { useDispatch, useSelector } from "react-redux";
+
+//Componts
+import Message from "../../../components/Message";
 
 //hook
 import { useState, useEffect } from "react";
@@ -13,7 +16,6 @@ const Login = () => {
   const [name,  setName] = useState("");
   const [email,  setEmail] = useState("");
   const [password,  setPassword] = useState("");
-  const [confirmPassword,  setConfirmPassword] = useState("")
 
   const dispath = useDispatch();
 
@@ -26,13 +28,12 @@ const Login = () => {
       name,
       email,
       password,
-      confirmPassword,
     };
 
     console.log(user);
     dispath(login(user));
   };
-
+  //clean all auth states
   useEffect(() => {
     dispath(reset());
   }, [dispath]);
@@ -48,27 +49,23 @@ const Login = () => {
           placeholder="Nome" 
           onChange={(e) => setName(e.target.value)} 
           value={name} 
-          required/>
+          />
 
           <input type="email" 
           placeholder="Email" 
           onChange={(e) => setEmail(e.target.value)} 
           value={email} 
-          required/>
+          />
 
           <input type="password" 
           placeholder="Senha" 
           onChange={(e) => setPassword(e.target.value)} 
           value={password} 
-          required/>
+          />
 
-          <input type="password" 
-          placeholder="Confirme a senha" 
-          onChange={(e) => setConfirmPassword(e.target.value)} 
-          value={confirmPassword} 
-          required/>
-
-          <input type="submit"  value="Entrar" />
+          {!loading && <input type="submit" value="Entrar" />}
+          {loading && <input type="submit" value="Aguarde..." disabled/>}
+          {error &&  <Message msg={error} type="error"/>}
         </form>
       </div>
   </div>

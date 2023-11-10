@@ -33,7 +33,7 @@ const userController = {
         res.status(201).json({
             email: email,
             token: generateToken(id),
-            msg: "The login it's done!"
+            msg: "The login is done!"
         });
     },
     
@@ -69,7 +69,7 @@ const userController = {
     },
 
     updateLogin: async (req, res) => {
-        const {name, email, password, confirmpassword} = req.body;
+        const {name, email, password} = req.body;
         const id =  req.params.id;
         const user = await User.findById(id).select("-password").select("-confirmpassword");
 
@@ -87,21 +87,17 @@ const userController = {
             user.password = passwordHash;
         }
 
-        if(confirmpassword){
-            user.confirmpassword = user.password;
-        }
-
         const updateUser =  await User.findByIdAndUpdate(id, user);
 
         if(!updateUser){
-            res.status(204).json({msg: "Project not found!"});
+            res.status(204).json({msg: "User not found!"});
             return;
         }
 
         res.status(200).json({
             id: id,
             token: generateToken(id),
-            msg: "The project has been updated!"});
+            msg: "The user has been updated!"});
     },
 
     getCurrentUser: async (req, res) => {
