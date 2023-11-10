@@ -2,7 +2,10 @@ import React from 'react';
 import "./global.css"
 
 // Router Dom
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
+
+//hooks
+import { useAuth } from "./hooks/useAuth";
 
 //Pages
 import Home from './pages/Home/Home';
@@ -15,6 +18,12 @@ import Update from './pages/Auth/Update/Update';
 import Navbar from './components/Navbar';
 
 const App = () => {
+  const {auth, loading} = useAuth();
+
+  if(loading){
+    return <p>Carregando...</p>
+  }
+
   return (
     <div>
       <BrowserRouter>
@@ -23,10 +32,10 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/projects' element={<Projects />} />
-          <Route path='/dashboard' element={<Dashboard />} />
-          <Route path='/create' element={<Create />} />
+          <Route path='/dashboard' element={auth ? <Dashboard /> : <Navigate to="/"/>} />
+          <Route path='/create' element={auth ? <Create /> : <Navigate to="/"/>} />
           <Route path='/login' element={<Login />} />
-          <Route path='/update' element={<Update />} />
+          <Route path='/update' element={auth ? <Update /> : <Navigate to="/"/>} />
         </Routes>
       </BrowserRouter>
     </div>
