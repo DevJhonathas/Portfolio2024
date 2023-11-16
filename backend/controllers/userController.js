@@ -71,7 +71,7 @@ const userController = {
     updateLogin: async (req, res) => {
         const {name, email, password} = req.body;
         const id =  req.params.id;
-        const user = await User.findById(id).select("-password").select("-confirmpassword");
+        const user = await User.findById(id).select("-password");
 
         if(name){
             user.name = name;

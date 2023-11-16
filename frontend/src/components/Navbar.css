@@ -1,8 +1,6 @@
 .container_navbar{
-    margin: 32px 250px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
 }
 
 .container_navbar ul{
@@ -33,5 +31,6 @@
     font-weight: bold;
     text-transform: uppercase;
     color: #ffff;
-    padding-right: 45%;
+    padding-right: 48%;
 }
+

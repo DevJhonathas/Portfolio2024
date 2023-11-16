@@ -13,7 +13,6 @@ import { useState, useEffect } from "react";
 import React from 'react';
 
 const Login = () => {
-  const [name,  setName] = useState("");
   const [email,  setEmail] = useState("");
   const [password,  setPassword] = useState("");
 
@@ -25,7 +24,6 @@ const Login = () => {
     e.preventDefault();
 
     const user = {
-      name,
       email,
       password,
     };
@@ -45,13 +43,6 @@ const Login = () => {
 
       <div className="login">
         <form onSubmit={handleSubmit}>
-          <input type="text" 
-          placeholder="Nome" 
-          onChange={(e) => setName(e.target.value)} 
-          value={name} 
-          required
-          />
-
           <input type="email" 
           placeholder="Email" 
           onChange={(e) => setEmail(e.target.value)} 

@@ -9,6 +9,7 @@ form{
     flex-direction: column;
     align-items: center;
 }
+
 .login{
     background-color: #ABD9D9;
     padding: 2.5em 4em;

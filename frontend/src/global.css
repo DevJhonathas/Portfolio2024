@@ -1,23 +1,46 @@
 :root{
-  --background-color: #171355;
+  --background-color: #070821;
   --color-text:  #ffff;
 }
 
-html{
-    background-color: var(--background-color);
-  }
-/* 
+html, body{
+  height: 100%;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  background-color: var(--background-color);
+}
+
 h1, h2, p{
-  color: var(--color-text)
-} */
+  color: var(--color-text);
+}
 
+.container{
+ margin: 32px;
+ margin-left: 200px;
+ margin-right: 200px;
+}
 
-.circle_gradient_left{
+.circle_shape{
+  width: 380px;
+  height: 380px;
+  box-shadow: inset 0px 0px 200px 525px rgb(74, 55, 249, .9);
   position: absolute;
-  width: 550px;
-  height: 550px;
-  background: linear-gradient(to center, transparent, 80%, #4B37F9);
-  border-radius: 300px;
-  top: -150px;
-  left: -120px;
+}
+
+/* Blur in Google Chrome/Internet Explorer works differently than in Opera GX, which is causing blur to crash */
+.circle_blur{
+  filter: blur(150px);
+}
+
+.circle_position_left{
+  top: -10px;
+  left: -5px;
+}
+
+.circle_position_right{
+  top: -10px;
+  right: 0px;
 }
