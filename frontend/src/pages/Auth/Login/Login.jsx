@@ -49,18 +49,21 @@ const Login = () => {
           placeholder="Nome" 
           onChange={(e) => setName(e.target.value)} 
           value={name} 
+          required
           />
 
           <input type="email" 
           placeholder="Email" 
           onChange={(e) => setEmail(e.target.value)} 
           value={email} 
+          required
           />
 
           <input type="password" 
           placeholder="Senha" 
           onChange={(e) => setPassword(e.target.value)} 
           value={password} 
+          required
           />
 
           {!loading && <input type="submit" value="Entrar" />}

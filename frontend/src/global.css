@@ -10,3 +10,14 @@ html{
 h1, h2, p{
   color: var(--color-text)
 } */
+
+
+.circle_gradient_left{
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  background: linear-gradient(to center, transparent, 80%, #4B37F9);
+  border-radius: 300px;
+  top: -150px;
+  left: -120px;
+}

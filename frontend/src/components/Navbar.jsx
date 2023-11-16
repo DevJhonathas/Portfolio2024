@@ -1,4 +1,6 @@
 import React from 'react'
+//CSS
+import "./Navbar.css";
 
 //react router dom
 import {NavLink} from "react-router-dom";
@@ -25,42 +27,45 @@ const Navbar = () => {
   }
   console.log(handleLogout)
   return (
-    <div>
+    <div className='container_navbar'>
+      <div className='company_name'>
+        <p>portfolio</p>
+      </div>
       <ul>
         {auth ? (
           <>
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/" className='button_navbar'>Home</NavLink>
             </li>
             <li>
-              <NavLink to="/projects">Projetos</NavLink>
+              <NavLink to="/projects" className='button_navbar'>Projetos</NavLink>
             </li>
             <li>
-              <NavLink to="/about">About</NavLink>
+              <NavLink to="/about" className='button_navbar'>About</NavLink>
             </li>
             <li>
-              <NavLink to="/dashboard">Dashboard</NavLink>
+              <NavLink to="/dashboard" className='button_navbar'>Dashboard</NavLink>
             </li>
             <li>
-              <NavLink to="/create">Create</NavLink>
+              <NavLink to="/create" className='button_navbar'>Create</NavLink>
             </li>
             <li>
-              <NavLink to="/update">Update</NavLink>
+              <NavLink to="/update" className='button_navbar'>Update</NavLink>
             </li>
             <li>
-              <span onClick={handleLogout}>Sair</span>
+              <span onClick={handleLogout} className='button_navbar'>Sair</span>
             </li>
           </>
         ) : (
           <>
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/" className='button_navbar'>Home</NavLink>
             </li>
             <li>
-              <NavLink to="/projects">Projetos</NavLink>
+              <NavLink to="/projects" className='button_navbar'>Projetos</NavLink>
             </li>
             <li>
-              <NavLink to="/about">About</NavLink>
+              <NavLink to="/about" className='button_navbar'>About</NavLink>
             </li>
           </>
         )}

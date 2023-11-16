@@ -26,6 +26,8 @@ const App = () => {
 
   return (
     <div>
+      <div className='circle_gradient_left'></div>
+      <div className='circle_gradient_right'></div>
       <BrowserRouter>
         <Navbar />
         <Routes>
