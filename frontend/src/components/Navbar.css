@@ -12,9 +12,11 @@
     list-style-type: none;
 }
 
+/* Is logged */
 .button_navbar{
     text-decoration: none;
     color: #ffff;
+    font-size: 20px;
 }
 .button_navbar:visited  {
     color: #ffff;
@@ -26,11 +28,22 @@
     text-decoration: none;
 }
 
-.company_name{
-    font-size: 20px;    
+/* not logged */
+
+
+/* rest of code */
+.company_name_logged{
+    font-size: 24px;    
     font-weight: bold;
     text-transform: uppercase;
     color: #ffff;
     padding-right: 48%;
 }
 
+.company_name_not_logged{
+    font-size: 24px;    
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffff;
+    padding-right: 67%;
+}

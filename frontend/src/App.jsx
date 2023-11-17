@@ -26,12 +26,12 @@ const App = () => {
 
   return (
     <div className='container'>
-        <div className='circle_position_right circle_shape circle_blur'></div>
         <div className='circle_position_left circle_shape circle_blur'></div>
+        <div className='circle_position_right circle_shape circle_blur'></div>
       <BrowserRouter>
         <Navbar />
-        <Home />
         <Routes>
+          <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/dashboard' element={auth ? <Dashboard /> : <Navigate to="/"/>} />

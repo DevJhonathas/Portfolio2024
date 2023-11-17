@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;700&family=Roboto:wght@400;500&display=swap');
+
 :root{
   --background-color: #070821;
   --color-text:  #ffff;
@@ -8,9 +10,11 @@ html, body{
 }
 
 body{
+  font-family: 'Outfit', sans-serif;
   padding: 0;
   margin: 0;
   background-color: var(--background-color);
+  overflow-y: hidden;
 }
 
 h1, h2, p{
@@ -18,21 +22,19 @@ h1, h2, p{
 }
 
 .container{
- margin: 32px;
- margin-left: 200px;
- margin-right: 200px;
+ margin: 32px 200px 50px 300px;
 }
 
 .circle_shape{
-  width: 380px;
-  height: 380px;
+  width: 580px;
+  height: 580px;
   box-shadow: inset 0px 0px 200px 525px rgb(74, 55, 249, .9);
   position: absolute;
 }
 
 /* Blur in Google Chrome/Internet Explorer works differently than in Opera GX, which is causing blur to crash */
 .circle_blur{
-  filter: blur(150px);
+  filter: blur(200px);
 }
 
 .circle_position_left{
@@ -41,6 +43,6 @@ h1, h2, p{
 }
 
 .circle_position_right{
-  top: -10px;
+  top: 300px;
   right: 0px;
 }

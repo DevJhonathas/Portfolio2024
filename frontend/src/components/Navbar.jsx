@@ -28,7 +28,7 @@ const Navbar = () => {
   console.log(handleLogout)
   return (
     <div className='container_navbar'>
-      <div className='company_name'>
+      <div className={auth ? 'company_name_logged' : 'company_name_not_logged'}>
         <p>portfolio</p>
       </div>
       <ul>
