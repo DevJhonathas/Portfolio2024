@@ -1,5 +1,8 @@
 .container_home{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .container_home p{
@@ -9,7 +12,7 @@
 .section_hero{
     display: flex;
     flex-direction: row;
-    column-gap: 30%;
+    column-gap: 33%;
 }
 
 .title_and_icons h1{
@@ -52,9 +55,68 @@
     height: 100px;
 }
 
-.section_objetivo{
+.section_object{
     display: flex;
     flex-direction: column;
     color: #ffff;
-    margin-top: 10vh;
+    margin-top: 25vh;}
+
+.section_object h3{
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.section_object p{
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.section_school{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25vh;
+}
+
+.section_school h3{
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.school h3{
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.section_courses{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25vh;
+}
+
+.section_courses h3{
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.section_projects{
+    margin-top: 25vh;}
+
+.section_projects h2{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.section_projects p{
+    font-size: 80px;
+    font-weight: bold;
+    width: 600px
 }
