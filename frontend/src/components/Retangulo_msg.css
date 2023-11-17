@@ -1,0 +1,53 @@
+.component_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0;
+    background: linear-gradient(to left top, #ABD9D9, 30%, #3628B4);
+    height: 20vh;
+}
+
+.component_text p {
+    font-size: 22px;
+    text-align: center;
+    margin: 30px 200px 0px 200px;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.ul_button{
+    list-style-type: none;
+}
+
+#style_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 100px;
+    width: 200px;
+    height: 5vh;
+    background-color: #000;
+    text-decoration: none;
+}
+
+.button{
+    color: #ffff;
+}
+
+.button:visited  {
+    color: #ffff;
+    text-decoration: none;
+}
+
+.button:link  {
+    color: #ffff;
+    text-decoration: none;
+}
+
+.component_text.nobutton ul{
+    display: none;
+}

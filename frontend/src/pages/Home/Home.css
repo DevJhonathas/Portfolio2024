@@ -54,5 +54,7 @@
 
 .section_objetivo{
     display: flex;
+    flex-direction: column;
     color: #ffff;
+    margin-top: 10vh;
 }

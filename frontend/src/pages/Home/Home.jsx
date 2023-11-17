@@ -8,6 +8,9 @@ import github from "../../images/svg/github.svg";
 import instagram from "../../images/svg/instagram.svg";
 import linkedin from "../../images/svg/linkedin.svg";
 
+//Components
+import Retangulo_msg from '../../components/Retangulo_msg';
+
 
 const Home = () => {
   return (
@@ -41,7 +44,9 @@ const Home = () => {
 
       <div className="section_objetivo">
         <h3>Objetivo</h3>
-        <div></div>
+        <div>
+          <Retangulo_msg msg={"Almejo uma oportunidade de estágio como desenvolvedor Full stack para obter minha primeira experiência. Penso sempre em melhorar as minhas habilidades, consigo ter uma boa comunicação em equipe e sempre faço o meu melhor."} type="button"/>
+        </div>
       </div>
     </div>
   )
