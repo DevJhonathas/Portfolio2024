@@ -16,8 +16,8 @@
 }
 
 .title_and_icons h1{
-    font-size: 100px;
-    width: 800px;
+    font-size: 6.3em;
+    width: 30vw;
     height: 200px;
     padding-bottom: -40px;
     text-align: center;
@@ -59,7 +59,8 @@
     display: flex;
     flex-direction: column;
     color: #ffff;
-    margin-top: 25vh;}
+    margin-top: 5vh;
+}
 
 .section_object h3{
     letter-spacing: 2px;
@@ -76,14 +77,15 @@
 .section_school{
     display: flex;
     flex-direction: row;
-    margin-top: 25vh;
+    align-items: center;
+    gap: 40%;
+    margin-top: 5vh;
 }
 
-.section_school h3{
-    letter-spacing: 2px;
-    font-weight: 500;
-    font-size: 24px;
-    text-transform: uppercase;
+.falling_books{
+    margin-top: 100px;
+    width: 20vw;
+    height: 50vh;
 }
 
 .school h3{
@@ -93,10 +95,30 @@
     text-transform: uppercase;
 }
 
+.school h2{
+    font-size: 48px;
+    width: 600px;
+}
+.school p{
+    margin-top: -20px;
+    font-size: 24px;
+    font-weight: 400;
+    width: 600px;
+}
+
 .section_courses{
     display: flex;
     flex-direction: row;
-    margin-top: 25vh;
+    align-items: center;
+    margin-top: 5vh;
+    color: #ffff;
+    gap: 48%;
+}
+
+.apple_with_books{
+    margin-top: 100px;
+    width: 20vw;
+    height: 50vh;
 }
 
 .section_courses h3{
@@ -104,9 +126,28 @@
     font-weight: 500;
     font-size: 24px;
     text-transform: uppercase;
+    margin-left: 35px;
 }
+
+.section_courses li{
+    list-style: none;
+}
+
+.section_courses span,
+.section_courses li{
+    font-size: 22px;
+}
+.section_courses span{
+    font-weight: 600;
+}
+
+.section_courses .bandeiras{
+    width: 20px;
+}
+
 .section_projects{
-    margin-top: 25vh;}
+    margin-top: 15vh;
+}
 
 .section_projects h2{
     margin-top: 50px;
@@ -119,4 +160,172 @@
     font-size: 80px;
     font-weight: bold;
     width: 600px
+}
+
+/* responsividade */
+@media (max-width: 2310px){
+    .section_hero{
+        column-gap: 28.5%;
+    }
+
+    .img_laptop{
+        width: 20vw;
+        height: 30vh;
+    }
+
+    .title_and_icons h1{
+        font-size: 80px;
+        width: 600px;
+        margin-left: -30px;
+    }
+
+    .title_and_icons p{
+        font-size: 24px;
+        margin-top: -40px;
+    }
+
+    .icons_img{
+        width: 80px;
+        height: 80px;
+    }
+    
+    .section_object p{
+        font-size: 20px;
+        width: 800px;
+    }
+
+    .form_container{
+        width: 70vw;
+        max-width: 70vw;
+        min-width: 38vw;
+    }
+
+    .section_school{
+        gap: 25%;
+    }
+
+    .falling_books{
+        margin-top: 100px;
+        width: 20vw;
+        height: 40vh;
+    }
+
+    .school h2{
+        font-size: 42px;
+    }
+
+    .section_courses{
+        gap: 38%;
+    }
+    
+    .courses{
+        margin-left: -44px;
+    }
+
+
+    .apple_with_books{
+        width: 20vw;
+        height: 40vh;
+    }
+}
+
+@media (max-width: 1820px){
+    .section_hero{
+        column-gap: 26.5%;
+    }
+
+    .title_and_icons h1{
+        font-size: 60px;
+    }
+    .img_laptop{
+        height: 25vh;
+    }
+
+    .section_object p{
+        font-size: 20px;
+        width: 800px;
+    }
+
+    .msg_form{
+        width: 69.5vw;
+    }
+
+    .section_school{
+        gap: 23%;
+    }
+
+    .falling_books{
+        height: 28vh;
+    }
+
+    .school h2{
+        font-size: 42px;
+    }
+
+    .section_courses{
+        gap: 38%;
+    }
+
+    .courses{
+        margin-left: -20px;
+    }
+
+    .apple_with_books{
+        width: 20vw;
+        height: 40vh;
+    }
+}
+
+@media (max-width: 1820px){
+    .section_school{
+        gap: 20%;
+    }
+
+    .school h2{
+        font-size: 42px;
+    }
+
+    .section_courses{
+        gap: 40%;
+    }
+
+    .courses{
+        margin-left: -20px;
+    }
+
+    .apple_with_books{
+        width: 20vw;
+        height: 40vh;
+    }
+}
+
+@media (max-width: 1525px){
+    .school h2{
+        font-size: 38px;
+    }
+    .school p{
+        font-size: 18px;
+        width: 500px;
+    }
+
+    .apple_with_books{
+        height: 40vh;
+    }
+
+    .section_courses h3{
+        font-size: 24px;
+    }
+
+    .section_courses span,
+    .section_courses li{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 375px){
+    
+}
+
+@media (max-width: 320px){
+    
 }

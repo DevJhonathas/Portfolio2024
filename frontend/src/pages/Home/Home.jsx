@@ -9,16 +9,18 @@ import apple_with_books from "../../images/svg/livros_e_maca.webp";
 import github from "../../images/svg/github.svg";
 import instagram from "../../images/svg/instagram.svg";
 import linkedin from "../../images/svg/linkedin.svg";
+import brasil from "../../images/brasil.png";
+import eua from "../../images/eua.png";
 
 //Components
-import Retangulo_msg from '../../components/Retangulo_msg';
+import RetanguloMsg from '../../components/RetanguloMsg';
 
 const Home = () => {
   return (
     <div className='container_home'>
-      <section className="section_hero">
+      <section className="section_hero form_container">
         <img src={laptop} alt="laptop" className='img_laptop'/>
-        <div className="title_and_icons">
+        <div className="title_and_icons form_container">
           <h1>Olá, me chamo jhonathas</h1>
           <p>Full Stack Developer</p>
           <div className="icons">
@@ -45,8 +47,8 @@ const Home = () => {
 
       <section className="section_object">
         <h3>Objetivo</h3>
-        <div>
-          <Retangulo_msg 
+        <div className='form_container'>
+          <RetanguloMsg 
           msg={"Almejo uma oportunidade de estágio como desenvolvedor Full stack para obter minha primeira experiência. Penso sempre em melhorar as minhas habilidades, consigo ter uma boa comunicação em equipe e sempre faço o meu melhor."} 
           type="button" 
           msg_button={"Sobre mim"} 
@@ -55,18 +57,18 @@ const Home = () => {
       </section>
 
       <section className="section_school">
-        <div className="school">
+        <div className="school form_container">
             <h3>Escolaridade</h3>
             <h2>Análise e Desenvolvimento de Sistemas</h2>
             <p>Universidade Vila Velha - 4° período.
             (Fevereiro de 2022) até (Fevereiro de 2024).</p>
         </div>
-        <img src={falling_books} alt="falling_books" />
+        <img src={falling_books} className='falling_books' alt="falling_books" />
       </section>
 
       <section className="section_courses">
-        <img src={apple_with_books} alt="apple_with_books" />
-        <div className="courses">
+        <img src={apple_with_books} className='apple_with_books' alt="apple_with_books" />
+        <div className="courses form_container">
             <h3>Cursos | idomas</h3>
             <ul className='courses_list'>
               <li><span>Full-stack</span> - Danki Code</li>
@@ -77,15 +79,15 @@ const Home = () => {
               <li><span>PHP do zero a maestria</span> - udemy</li>
             </ul>
             <ul className="language_list">
-              <li>🇧🇷🇷PT-BR Falante nativo</li>
-              <li>🇺🇸 EN Avançado</li>
+              <li><img src={brasil} className='bandeiras' alt="brasil" /> PT-BR Falante nativo</li>
+              <li><img src={eua} className='bandeiras' alt="Eua" />  EN Avançado</li>
             </ul>
         </div>
       </section>
 
       <section className="section_projects">
-        <div>
-          <Retangulo_msg 
+        <div className='form_container'>
+          <RetanguloMsg 
           msg_title={"Está preparado?"} 
           msg={"Venha conhecer meus projetos"} 
           type="button" msg_button={"Projetos"} 

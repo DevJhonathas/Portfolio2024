@@ -1,7 +1,7 @@
 import React from 'react'
 
 // CSS
-import "./Retangulo_msg.css";
+import "./RetanguloMsg.css";
 
 // React Router Dom
 import { NavLink } from 'react-router-dom';

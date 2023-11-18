@@ -31,7 +31,6 @@ h1, h2, h3, p{
   position: absolute;
 }
 
-/* Blur in Google Chrome/Internet Explorer works differently than in Opera GX, which is causing blur to crash */
 .circle_blur{
   filter: blur(200px);
 }

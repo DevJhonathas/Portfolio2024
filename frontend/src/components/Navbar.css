@@ -44,3 +44,14 @@
     color: #ffff;
     padding-right: 73%;
 }
+
+
+@media (max-width: 2310px){
+    .company_name_logged{
+        padding-right: 29%;
+    }   
+
+    .company_name_not_logged{
+        padding-right: 63%;
+    }
+}
