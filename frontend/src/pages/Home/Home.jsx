@@ -13,7 +13,7 @@ import brasil from "../../images/brasil.png";
 import eua from "../../images/eua.png";
 
 //Components
-import RetanguloMsg from '../../components/RetanguloMsg';
+import MessageWithButton from '../../components/MessageWithButton';
 
 const Home = () => {
   return (
@@ -48,7 +48,7 @@ const Home = () => {
       <section className="section_object">
         <h3>Objetivo</h3>
         <div className='form_container'>
-          <RetanguloMsg 
+          <MessageWithButton 
           msg={"Almejo uma oportunidade de estágio como desenvolvedor Full stack para obter minha primeira experiência. Penso sempre em melhorar as minhas habilidades, consigo ter uma boa comunicação em equipe e sempre faço o meu melhor."} 
           type="button" 
           msg_button={"Sobre mim"} 
@@ -87,7 +87,7 @@ const Home = () => {
 
       <section className="section_projects">
         <div className='form_container'>
-          <RetanguloMsg 
+          <MessageWithButton 
           msg_title={"Está preparado?"} 
           msg={"Venha conhecer meus projetos"} 
           type="button" msg_button={"Projetos"} 

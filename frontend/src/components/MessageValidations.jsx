@@ -1,4 +1,4 @@
-import "./Message.css";
+import "./MessageValidations.css";
 
 import React from 'react'
 

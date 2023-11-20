@@ -6,7 +6,7 @@ import { reset, login } from "../../../slices/authSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 //Componts
-import Message from "../../../components/Message";
+import MessageValidations from "../../../components/MessageValidations";
 
 //hook
 import { useState, useEffect } from "react";
@@ -59,7 +59,7 @@ const Login = () => {
 
           {!loading && <input type="submit" value="Entrar" />}
           {loading && <input type="submit" value="Aguarde..." disabled/>}
-          {error &&  <Message msg={error} type="error"/>}
+          {error &&  <MessageValidations msg={error} type="error"/>}
         </form>
       </div>
   </div>

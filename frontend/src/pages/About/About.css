@@ -1,0 +1,39 @@
+.container_about{
+    position: relative;
+}
+
+.section_hero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.text_about_me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text_about_me h1{
+    font-size: 7em;
+    font-weight: 600;
+    min-width: 30vw;
+    margin: -30px;
+    text-align: center;
+}
+
+.text_about_me p{
+    font-size: 3em;
+    font-weight: 600;
+    max-width: 20vw;
+    text-align: center;
+}
+
+.img_balao_duvida{
+    max-width: 500px;
+}
+
+.section_objetivo_about{
+
+}
