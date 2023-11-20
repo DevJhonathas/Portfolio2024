@@ -55,3 +55,8 @@
         padding-right: 63%;
     }
 }
+@media (max-width: 768px){
+    .container_navbar{
+        flex-wrap: wrap;
+    }
+}

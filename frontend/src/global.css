@@ -44,3 +44,27 @@ h1, h2, h3, p{
   top: 300px;
   right: 0px;
 }
+
+.subtitle h3{
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+
+@media (max-width: 768px){
+  .circle_shape{
+    width: 350px;
+    height: 350px;
+    box-shadow: inset 0px 0px 200px 525px rgb(74, 55, 249, .9);
+  }
+
+  .circle_blur{
+    filter: blur(120px);
+  }
+
+  .circle_position_right{
+    top: 450px;
+  }
+}

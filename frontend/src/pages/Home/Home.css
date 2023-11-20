@@ -15,6 +15,14 @@
     column-gap: 33%;
 }
 
+.Component_message_text{
+    font-size: 2.5em;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .title_and_icons h1{
     font-size: 6.3em;
     width: 30vw;
@@ -60,13 +68,6 @@
     flex-direction: column;
     color: #ffff;
     margin-top: 5vh;
-}
-
-.section_object h3{
-    letter-spacing: 2px;
-    font-weight: 500;
-    font-size: 24px;
-    text-transform: uppercase;
 }
 
 .section_object p{
