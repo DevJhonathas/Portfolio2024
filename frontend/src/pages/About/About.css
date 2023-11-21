@@ -2,32 +2,12 @@
     position: relative;
 }
 
-.section_hero{
+.section_hero_about{
     display: flex;
     flex-direction: row;
     align-items: center;    
     flex-wrap: nowrap;
     justify-content: space-between;
-}
-
-.text_about_me{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.text_about_me h1{
-    font-size: 6em;
-    font-weight: 600;
-    text-align: center;
-}
-
-.text_about_me p{
-    font-size: 4em;
-    font-weight: 600;
-    max-width: 25vw;
-    text-align: center;
-    margin-top: -50px;
 }
 
 .img_balao_duvida{
@@ -95,7 +75,7 @@
 
 /* Responsividade */
 @media (max-width: 1440px){
-    .section_hero{
+    .section_hero_about{
         justify-content: space-between;
         margin-top: 5%;
     }
@@ -168,7 +148,7 @@
 }
 
 @media (max-width: 768px){
-    .section_hero{
+    .section_hero_about{
         flex-wrap: wrap-reverse;
         justify-content: center;
     }

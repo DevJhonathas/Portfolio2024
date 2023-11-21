@@ -6,7 +6,6 @@
 }
 
 html, body{
-  height: 100%;
   padding: 0;
   margin: 0;
 }
@@ -14,6 +13,7 @@ html, body{
 body{
   font-family: 'Outfit', sans-serif;
   background-color: var(--background-color);
+  height: 100%;
 }
 
 h1, h2, h3, p{
@@ -70,6 +70,29 @@ h1, h2, h3, p{
   height: 100px;
   margin: 0px;
   padding: 0px;
+}
+
+
+/* Texto inicial de cada página about/home/projcts */
+
+.text_about_me{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text_about_me h1{
+  font-size: 6em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.text_about_me p{
+  font-size: 2em;
+  font-weight: 600;
+  max-width: 20vw;
+  text-align: center;
+  margin-top: -10%;
 }
 
 @media (max-width: 768px){

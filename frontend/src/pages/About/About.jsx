@@ -20,7 +20,7 @@ import MessageWithButton from '../../components/MessageWithButton';
 const About = () => {
   return (
     <div className='container_about'>
-      <section className="section_hero">
+      <section className="section_hero_about">
           <div className='text_about_me'>
             <h1>Quem eu sou?</h1>
             <p>Olá, me chamo Jhonathas</p>

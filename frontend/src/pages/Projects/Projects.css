@@ -1,0 +1,16 @@
+.container_projects{
+    position: relative;
+}
+
+.section_hero_projects{
+    display: flex;
+    flex-direction: row;
+    align-items: start;    
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.img_laptop_projetos{
+    max-width: 400px;
+}

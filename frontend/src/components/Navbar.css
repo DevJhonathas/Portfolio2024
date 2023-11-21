@@ -1,11 +1,12 @@
 .container_navbar{
     display: flex;
     position: relative;
+    justify-content: space-between;
 }
 
 .container_navbar ul{
     display: flex;
-    gap: 50px
+    gap: 20px;
 }
 
 .container_navbar li{
@@ -33,7 +34,6 @@
     font-weight: bold;
     text-transform: uppercase;
     color: #ffff;
-    padding-right: 50%;
 }
 
 /* Not logged in */
@@ -42,21 +42,12 @@
     font-weight: bold;
     text-transform: uppercase;
     color: #ffff;
-    padding-right: 73%;
 }
 
 
-@media (max-width: 2310px){
-    .company_name_logged{
-        padding-right: 29%;
-    }   
 
-    .company_name_not_logged{
-        padding-right: 63%;
-    }
-}
 @media (max-width: 768px){
-    .container_navbar{
-        flex-wrap: wrap;
+    .container_navbar ul{
+        display: none;
     }
 }
