@@ -31,8 +31,8 @@ const About = () => {
       <div className='subtitle'>
         <h3>Objetivo</h3>
       </div>
-      <div>
-          <MessageText className="Component_message_text"
+      <div className='component_message_text'>
+          <MessageText
             text_one={"Olá! Sou o Jhonathas, um apaixonado por desenvolvimento Full-Stack, atualmente cursando na Universidade Vila Velha e pronto para abraçar minha primeira oportunidade profissional nesse campo."}
             text_two={"Desde os 16 anos, venho imerso no mundo da programação, explorando diversas linguagens, mas foi no desenvolvimento web que encontrei minha verdadeira vocação e aprimorei minhas habilidades."}
             text_three={"Minha jornada inclui vários cursos na área de desenvolvimento e estou no 4° período de Análise e Desenvolvimento de Sistemas, sempre buscando aprimorar meu conhecimento. Estou animado para aplicar toda essa bagagem e colaborar ativamente para o crescimento e inovação de uma empresa."}
@@ -40,19 +40,23 @@ const About = () => {
         </div>
       </section>
 
-      <section className="section_school">
-        <div className="school form_container">
+      <section className="section_school_about">
+        <div className='subtitle school_text_about'>
             <h3>Escolaridade</h3>
             <h2>Análise e Desenvolvimento de Sistemas</h2>
             <p>Universidade Vila Velha - 4° período.
             (Fevereiro de 2022) até (Fevereiro de 2024).</p>
         </div>
-        <img src={falling_books} className='falling_books' alt="falling_books" />
+        <div >
+          <img src={falling_books} alt="falling_books" className="falling_books_about" />
+        </div>
       </section>
 
-      <section className="section_courses">
-        <img src={apple_with_books} className='apple_with_books' alt="apple_with_books" />
-        <div className="courses form_container">
+      <section className="section_courses_about">
+        <div className="img_books_and_apple">
+          <img src={apple_with_books} className='apple_with_books' alt="apple_with_books" />
+        </div>
+        <div className="subtitle courses_text_about">
             <h3>Cursos | idomas</h3>
             <ul className='courses_list'>
               <li><span>Full-stack</span> - Danki Code</li>
@@ -70,7 +74,7 @@ const About = () => {
       </section>
 
       <section className="section_projects">
-        <div className='form_container'>
+        <div className='text_about_me'>
           <MessageWithButton 
           msg_title={"Está preparado?"} 
           msg={"Venha conhecer meus projetos"} 
