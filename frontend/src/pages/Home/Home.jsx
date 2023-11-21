@@ -23,21 +23,21 @@ const Home = () => {
         <div className="title_and_icons form_container">
           <h1>Olá, me chamo jhonathas</h1>
           <p>Full Stack Developer</p>
-          <div className="icons">
+          <div className="icons_rede_social">
             <ul>
               <li>
                 <a href="https://www.instagram.com/jhonathas921/" target="_blank" rel='noreferrer'>
-                  <img src={instagram} alt="instagram" className='icons_img'/>
+                  <img src={instagram} alt="instagram" className='img_icons_rede_sociais'/>
                 </a>
                 </li>
               <li>
                 <a href="https://www.linkedin.com/in/jhonathas-souza-33891b245/" target="_blank" rel='noreferrer'>
-                  <img src={linkedin} alt="linkedin"  className='icons_img'/>
+                  <img src={linkedin} alt="linkedin"  className='img_icons_rede_sociais'/>
                 </a>
               </li>
               <li>
                 <a href="https://github.com/DevJhonathas" target="_blank" rel='noreferrer'>
-                  <img src={github} alt="github"  className='icons_img'/>
+                  <img src={github} alt="github"  className='img_icons_rede_sociais'/>
                 </a>
               </li>
             </ul>

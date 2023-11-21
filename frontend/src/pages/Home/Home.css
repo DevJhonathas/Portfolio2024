@@ -48,21 +48,6 @@
     height: 40vh;
 }
 
-.icons ul{
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
-    list-style-type: none;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-}
-
-.icons_img{
-    width: 100px;
-    height: 100px;
-}
-
 .section_object{
     display: flex;
     flex-direction: column;

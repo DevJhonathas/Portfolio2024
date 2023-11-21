@@ -12,7 +12,7 @@ const Rentagulo_msg = ({msg, msg_button, msg_title, rota}) => {
             <h2>{msg_title}</h2>
             <p>{msg}</p>
             <ul>
-                <li className='ul_button'>
+                <li className='li_button'>
                     <NavLink to={rota} id='style_button' className="button">{msg_button}</NavLink>
                 </li>
             </ul>

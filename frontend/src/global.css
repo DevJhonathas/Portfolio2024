@@ -7,12 +7,12 @@
 
 html, body{
   height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 body{
   font-family: 'Outfit', sans-serif;
-  padding: 0;
-  margin: 0;
   background-color: var(--background-color);
 }
 
@@ -52,6 +52,25 @@ h1, h2, h3, p{
   text-transform: uppercase;
 }
 
+/* Icones de rede sociais */
+.icons_rede_social ul{
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.img_icons_rede_sociais{
+  width: 5vw;
+  height: 100px;
+  margin: 0px;
+  padding: 0px;
+}
 
 @media (max-width: 768px){
   .circle_shape{
@@ -66,5 +85,9 @@ h1, h2, h3, p{
 
   .circle_position_right{
     top: 450px;
+  }
+
+  .img_icons_rede_sociais{
+    width: 20vw;
   }
 }

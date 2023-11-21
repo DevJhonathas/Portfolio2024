@@ -7,6 +7,9 @@ import "./About.css";
 import balaoDuvida from "../../images/svg/chat_interrogacao.webp";
 import falling_books from "../../images/svg/livros_em_queda.webp";
 import apple_with_books from "../../images/svg/livros_e_maca.webp";
+import github from "../../images/svg/github.svg";
+import instagram from "../../images/svg/instagram.svg";
+import linkedin from "../../images/svg/linkedin.svg";
 import brasil from "../../images/brasil.png";
 import eua from "../../images/eua.png";
 
@@ -21,6 +24,25 @@ const About = () => {
           <div className='text_about_me'>
             <h1>Quem eu sou?</h1>
             <p>Olá, me chamo Jhonathas</p>
+            <div className="icons_rede_social">
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/jhonathas921/" target="_blank" rel='noreferrer'>
+                  <img src={instagram} alt="instagram" className='img_icons_rede_sociais'/>
+                </a>
+                </li>
+              <li>
+                <a href="https://www.linkedin.com/in/jhonathas-souza-33891b245/" target="_blank" rel='noreferrer'>
+                  <img src={linkedin} alt="linkedin"  className='img_icons_rede_sociais'/>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/DevJhonathas" target="_blank" rel='noreferrer'>
+                  <img src={github} alt="github"  className='img_icons_rede_sociais'/>
+                </a>
+              </li>
+            </ul>
+          </div>
           </div>
           <div>
             <img className="img_balao_duvida" src={balaoDuvida} alt="balão de duvida" />
@@ -48,13 +70,13 @@ const About = () => {
             (Fevereiro de 2022) até (Fevereiro de 2024).</p>
         </div>
         <div >
-          <img src={falling_books} alt="falling_books" className="falling_books_about" />
+          <img src={falling_books} alt="falling_books" className="img_falling_books_about" />
         </div>
       </section>
 
       <section className="section_courses_about">
-        <div className="img_books_and_apple">
-          <img src={apple_with_books} className='apple_with_books' alt="apple_with_books" />
+        <div>
+          <img src={apple_with_books} className="img_books_and_apple" alt="apple_with_books" />
         </div>
         <div className="subtitle courses_text_about">
             <h3>Cursos | idomas</h3>
@@ -74,7 +96,7 @@ const About = () => {
       </section>
 
       <section className="section_projects">
-        <div className='text_about_me'>
+        <div>
           <MessageWithButton 
           msg_title={"Está preparado?"} 
           msg={"Venha conhecer meus projetos"} 
