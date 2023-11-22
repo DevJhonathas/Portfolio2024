@@ -46,6 +46,11 @@
     width: 600px;
 }
 
+.img_falling_books_about{
+    width: 25vw;
+    height: 40vh;
+}
+
 /* Courses */
 .section_courses_about{
     display: flex;
@@ -62,7 +67,7 @@
 
 .courses_text_about span,
 .courses_text_about li{
-    font-size: 22px;
+    font-size: 1.5em;
 }
 .courses_text_about span{
     font-weight: 600;
@@ -71,7 +76,6 @@
 .language_list .bandeiras{
     width: 20px;
 }
-
 
 /* Responsividade */
 @media (max-width: 1440px){
@@ -232,6 +236,10 @@
 @media (max-width: 428px){
     .section_objetivo_about{
         font-size: .6em;
+    }
+
+    .img_books_and_apple{
+        width: 60vw;
     }
 }
 

@@ -72,9 +72,7 @@ h1, h2, h3, p{
   padding: 0px;
 }
 
-
 /* Texto inicial de cada página about/home/projcts */
-
 .text_about_me{
   display: flex;
   flex-direction: column;
