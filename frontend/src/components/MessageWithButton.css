@@ -13,13 +13,12 @@
 .component_text p {
     text-align: center;
     margin: 0px 200px 0px 200px;
-    padding-bottom: 20px;
     text-transform: capitalize;
     font-weight: 500;
 }
 
 .component_text ul{
-    margin: 0px 0px 20px 0px;
+    margin: 2% 0px 20px 0px;
     padding: 0px;
 }
 
@@ -52,7 +51,16 @@
     color: #ffff;
     text-decoration: none;
 }
-
+@media (max-width: 1350px){
+    .component_text p{
+        margin: 0px 20px 0px 20px;
+    }
+    
+    .component_text ul{
+        margin: 4% 0px 20px 0px;
+        padding: 0px;
+    }
+}
 @media (max-width: 1024px){
     .button{
         font-size: 1em;

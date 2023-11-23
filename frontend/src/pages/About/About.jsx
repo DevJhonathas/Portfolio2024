@@ -79,8 +79,8 @@ const About = () => {
           <img src={apple_with_books} className="img_books_and_apple" alt="apple_with_books" />
         </div>
         <div className="subtitle courses_text_about">
-            <h3>Cursos | idomas</h3>
             <ul className='courses_list'>
+              <h3>Cursos | idomas</h3>
               <li><span>Full-stack</span> - Danki Code</li>
               <li><span>Web Designer</span> - Prepara cursos</li>
               <li><span>Programador</span> - Prepara Cursos</li>

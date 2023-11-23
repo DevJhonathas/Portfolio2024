@@ -1,58 +1,28 @@
 .container_home{
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
-.container_home p{
-    color: #ffff;
-}
-
-.section_hero{
+.section_hero_home{
     display: flex;
     flex-direction: row;
-    column-gap: 33%;
+    align-items: center;    
+    flex-wrap: nowrap;
+    justify-content: space-between;  
 }
 
-.Component_message_text{
-    font-size: 2.5em;
-    font-weight: 400;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.title_and_icons h1{
-    font-size: 6.3em;
-    width: 30vw;
-    height: 200px;
-    padding-bottom: -40px;
-    text-align: center;
-}
-
-.title_and_icons{
-    text-transform: capitalize;
-}
-
-.title_and_icons p{
-    font-size: 24px;
-    padding-left: 15%;
-    padding-right: 10%;
-    text-align: center;
+.p_about_me{
+    margin-top: -5%;
 }
 
 .img_laptop{
-    margin-top: 100px;
-    width: 20vw;
-    height: 40vh;
+    max-width: 500px;
 }
 
+/* object */
 .section_object{
     display: flex;
     flex-direction: column;
-    color: #ffff;
-    margin-top: 5vh;
+    margin-top: 10%;
 }
 
 .section_object p{
@@ -60,18 +30,17 @@
     letter-spacing: 2px;
 }
 
+/* School */
 .section_school{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 40%;
-    margin-top: 5vh;
+    justify-content: space-between;
+    margin-top: 10%;
 }
 
 .falling_books{
-    margin-top: 100px;
-    width: 20vw;
-    height: 50vh;
+    max-width: 400px;
 }
 
 .school h3{
@@ -92,19 +61,18 @@
     width: 600px;
 }
 
+/* Course */
 .section_courses{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 5vh;
+    justify-content: space-between;
+    margin-top: 10%;
     color: #ffff;
-    gap: 48%;
 }
 
 .apple_with_books{
-    margin-top: 100px;
-    width: 20vw;
-    height: 50vh;
+    max-width: 400px;
 }
 
 .section_courses h3{
@@ -112,7 +80,6 @@
     font-weight: 500;
     font-size: 24px;
     text-transform: uppercase;
-    margin-left: 35px;
 }
 
 .section_courses li{
@@ -131,14 +98,13 @@
     width: 20px;
 }
 
+/* Projects */
 .section_projects{
-    margin-top: 15vh;
+    margin-top: 10%;
 }
 
 .section_projects h2{
     margin-top: 50px;
-    margin-bottom: 40px;
-    font-size: 30px;
     font-weight: bold;
 }
 
@@ -148,169 +114,72 @@
     width: 600px
 }
 
-/* responsividade */
-@media (max-width: 2310px){
-    .section_hero{
-        column-gap: 28.5%;
-    }
-
-    .img_laptop{
-        width: 20vw;
-        height: 30vh;
-    }
-
-    .title_and_icons h1{
-        font-size: 80px;
-        width: 600px;
-        margin-left: -30px;
-    }
-
-    .title_and_icons p{
-        font-size: 24px;
-        margin-top: -40px;
-    }
-
-    .icons_img{
-        width: 80px;
-        height: 80px;
-    }
-    
-    .section_object p{
-        font-size: 20px;
-        width: 800px;
-    }
-
-    .form_container{
-        width: 70vw;
-        max-width: 70vw;
-        min-width: 38vw;
-    }
-
-    .section_school{
-        gap: 25%;
-    }
-
-    .falling_books{
-        margin-top: 100px;
-        width: 20vw;
-        height: 40vh;
-    }
-
+/* Responsividade */
+@media (max-width: 1650px){
     .school h2{
-        font-size: 42px;
+        font-size: 2em;
+        max-width: 30vw;
     }
 
-    .section_courses{
-        gap: 38%;
-    }
-    
-    .courses{
-        margin-left: -44px;
-    }
-
-    .apple_with_books{
-        width: 20vw;
-        height: 40vh;
-    }
-}
-
-@media (max-width: 1820px){
-    .section_hero{
-        column-gap: 26.5%;
-    }
-
-    .title_and_icons h1{
-        font-size: 60px;
-    }
-    .img_laptop{
-        height: 25vh;
-    }
-
-    .section_object p{
-        font-size: 20px;
-        width: 800px;
-    }
-
-    .msg_form{
-        width: 69.5vw;
-    }
-
-    .section_school{
-        gap: 23%;
-    }
-
-    .falling_books{
-        height: 28vh;
-    }
-
-    .school h2{
-        font-size: 42px;
-    }
-
-    .section_courses{
-        gap: 38%;
-    }
-
-    .courses{
-        margin-left: -20px;
-    }
-
-    .apple_with_books{
-        width: 20vw;
-        height: 40vh;
-    }
-}
-
-@media (max-width: 1820px){
-    .section_school{
-        gap: 20%;
-    }
-
-    .school h2{
-        font-size: 42px;
-    }
-
-    .section_courses{
-        gap: 40%;
-    }
-
-    .courses{
-        margin-left: -20px;
-    }
-
-    .apple_with_books{
-        width: 20vw;
-        height: 40vh;
-    }
-}
-
-@media (max-width: 1525px){
-    .school h2{
-        font-size: 38px;
-    }
     .school p{
-        font-size: 18px;
-        width: 500px;
+        max-width: 30vw;
+    }
+}
+
+@media (max-width: 1350px){
+    .section_hero_home{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .section_school{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .section_courses{
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
+    .my_objective p{
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 884px){
+    .falling_books,
     .apple_with_books{
-        height: 40vh;
+        max-width: 400px;
+        margin-top: 10%;
+        margin-bottom: 10%;
     }
 
-    .section_courses h3{
-        font-size: 24px;
-    }
-
-    .section_courses span,
-    .section_courses li{
-        font-size: 18px;
+    .p_about_me{
+        margin-top: -10%;
     }
 }
 
-@media (max-width: 375px){
-    
+@media (max-width: 768px){
+    .p_about_me{
+        margin-top: 5%;
+    }
 }
 
-@media (max-width: 320px){
-    
+@media (max-width: 520px){
+    .img_laptop,
+    .apple_with_books,
+    .falling_books{
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 450px){
+    .p_about_me{
+        margin-top: 0%;
+    }
+}
+
+@media (max-width: 390px){
+    .section_projects h2{
+        font-size: 0px;
+    }
 }

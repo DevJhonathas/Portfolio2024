@@ -4,15 +4,15 @@ import "./Projects.css";
 
 // images
 import laptop_projetos from "../../images/svg/tl.webp"; 
-import reactjs from "../../images/languages/reactjs.png";
-import css from "../../images/languages/css.png";
-import html from "../../images/languages/html.png";
-import nodejs from "../../images/languages/nodejs.png";
-import js from "../../images/languages/js.png";
-import firebase from "../../images/database/firebase.png";
-import mongodb from "../../images/database/mongodb.png";
-import postgresql from "../../images/database/postgresql.png";
-import sql_server from "../../images/database/sql_server.png";
+import reactjs from "../../images/img_languages/reactjs.png";
+import css from "../../images/img_languages/css.png";
+import html from "../../images/img_languages/html.png";
+import nodejs from "../../images/img_languages/nodejs.png";
+import js from "../../images/img_languages/js.png";
+import firebase from "../../images/img_database/firebase.png";
+import mongodb from "../../images/img_database/mongodb.png";
+import postgresql from "../../images/img_database/postgresql.png";
+import sql_server from "../../images/img_database/sql_server.png";
 
 // Components
 import MessageWithButton from '../../components/MessageWithButton';
