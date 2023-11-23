@@ -87,14 +87,6 @@
         justify-content: space-between;
         margin-top: 5%;
     }
-    
-    .text_about_me h1{
-        font-size: 4em;
-    }
-    
-    .text_about_me p{
-        font-size: 2em;
-    }
 
     .img_balao_duvida{
         width: 20vw;
@@ -161,17 +153,6 @@
         justify-content: center;
     }
 
-    .text_about_me h1{
-        margin-top: 10px;
-        font-size: 4em;
-        margin-bottom: -20px;
-    }
-    
-    .text_about_me p{
-        font-size: 1.5em;
-        max-width: 70vw;
-    }
-
     .img_balao_duvida{
         margin: 20px;
         width: 60vw;
@@ -236,11 +217,18 @@
         width: 50vw;
         height: 50vh;
     }
+
+    .section_objetivo_about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media (max-width: 428px){
     .section_objetivo_about{
-        font-size: .5em;
+        font-size: .6em;
     }
 
     .img_books_and_apple{

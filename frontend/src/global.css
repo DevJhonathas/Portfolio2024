@@ -139,3 +139,9 @@ h1, h2, h3, p{
       max-width: 70vw;
   }
 }
+
+@media (max-width: 490px){
+  .text_about_me h1{
+    font-size: 2.5em;
+  }
+}

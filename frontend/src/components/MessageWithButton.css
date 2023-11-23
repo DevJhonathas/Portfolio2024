@@ -77,3 +77,20 @@
         max-width: 200px;
     }
 }
+
+@media (max-width: 520px){
+    .component_text{
+        width: 80vw;
+    }
+
+    .component_text p{
+        max-width: 300px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 490px){
+    .button{
+        width: 35vw;
+    }
+}

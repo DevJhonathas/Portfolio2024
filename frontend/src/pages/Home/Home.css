@@ -22,6 +22,8 @@
 .section_object{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 10%;
 }
 
@@ -100,6 +102,10 @@
 
 /* Projects */
 .section_projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin-top: 10%;
 }
 
@@ -169,6 +175,19 @@
     .apple_with_books,
     .falling_books{
         max-width: 300px;
+    }
+
+    .school h2{
+        font-size: 2em;
+        max-width: 50vw;
+    }
+
+    .school p{
+        max-width: 60vw;
+    }
+
+    .courses_list{
+        width: 80vw;
     }
 }
 
