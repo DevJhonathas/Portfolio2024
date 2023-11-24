@@ -7,7 +7,7 @@
     flex-direction: row;
     align-items: center;    
     flex-wrap: nowrap;
-    justify-content: space-between;  
+    justify-content: space-between; 
 }
 
 .p_about_me{
@@ -23,7 +23,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     margin-top: 10%;
 }
 
@@ -102,10 +101,6 @@
 
 /* Projects */
 .section_projects{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     margin-top: 10%;
 }
 
@@ -167,6 +162,19 @@
 @media (max-width: 768px){
     .p_about_me{
         margin-top: 5%;
+    }
+}
+
+@media (max-width:589px){
+    .section_projects{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section_object{
+        align-items: center;
     }
 }
 

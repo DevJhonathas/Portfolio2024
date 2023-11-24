@@ -21,7 +21,7 @@ const About = () => {
   return (
     <div className='container_about'>
       <section className="section_hero_about">
-        <div className='text_about_me'>
+        <div className='text_about_me slideInRight'>
             <h1>Quem eu sou?</h1>
             <p>Olá, me chamo Jhonathas</p>
             <div className="icons_rede_social">
@@ -30,7 +30,7 @@ const About = () => {
                 <a href="https://www.instagram.com/jhonathas921/" target="_blank" rel='noreferrer'>
                   <img src={instagram} alt="instagram" className='img_icons_rede_sociais'/>
                 </a>
-                </li>
+              </li>
               <li>
                 <a href="https://www.linkedin.com/in/jhonathas-souza-33891b245/" target="_blank" rel='noreferrer'>
                   <img src={linkedin} alt="linkedin"  className='img_icons_rede_sociais'/>
@@ -45,15 +45,15 @@ const About = () => {
           </div>
         </div>
           <div>
-            <img className="img_balao_duvida" src={balaoDuvida} alt="balão de duvida" />
+            <img className="img_balao_duvida slideInLeft" src={balaoDuvida} alt="balão de duvida" />
           </div>
       </section>
 
       <section className='section_objetivo_about'>
-      <div className='subtitle'>
-        <h3>Objetivo</h3>
-      </div>
-      <div className='component_message_text'>
+        <div className='subtitle'>
+          <h3>Objetivo</h3>
+        </div>
+        <div className='component_message_text'>
           <MessageText
             text_one={"Olá! Sou o Jhonathas, um apaixonado por desenvolvimento Full-Stack, atualmente cursando na Universidade Vila Velha e pronto para abraçar minha primeira oportunidade profissional nesse campo."}
             text_two={"Desde os 16 anos, venho imerso no mundo da programação, explorando diversas linguagens, mas foi no desenvolvimento web que encontrei minha verdadeira vocação e aprimorei minhas habilidades."}

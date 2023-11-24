@@ -29,7 +29,9 @@ const Navbar = () => {
   return (
     <div className='container_navbar'>
       <div className={auth ? 'company_name_logged' : 'company_name_not_logged'}>
-        <p>portfolio</p>
+        <p>
+          <NavLink to="/" className="button_navbar_company">portfolio</NavLink>
+        </p>
       </div>
       <ul>
         {auth ? (

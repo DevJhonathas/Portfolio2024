@@ -19,10 +19,10 @@ const Home = () => {
   return (
     <div className='container_home'>
       <section className="section_hero_home">
-        <div>
+        <div className='slideInRight'>
           <img src={laptop} alt="laptop" className='img_laptop'/>
         </div>
-        <div className="text_about_me">
+        <div className="text_about_me slideInLeft">
           <h1>Olá, Me chamo jhonathas</h1>
           <div className='p_about_me'>
             <p>Full Stack Developer</p>

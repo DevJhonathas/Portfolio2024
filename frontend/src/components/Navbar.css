@@ -12,18 +12,36 @@
 .container_navbar li{
     list-style-type: none;
 }
+.button_navbar_company{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 24px;
+    transition:  0.5s ease-in-out;
+}
 
 .button_navbar{
     text-decoration: none;
     color: #ffff;
     font-size: 20px;
+    transition:  0.5s ease-in-out;
 }
-.button_navbar:visited  {
+
+.button_navbar:hover{
+    letter-spacing: 0.2em;
+}
+
+.button_navbar_company:hover{
+    letter-spacing: 0.1em;
+}
+
+.button_navbar:visited,
+.button_navbar_company:hover{
     color: #ffff;
     text-decoration: none;
 }
 
-.button_navbar:link  {
+.button_navbar:link,
+.button_navbar_company:hover{
     color: #ffff;
     text-decoration: none;
 }
