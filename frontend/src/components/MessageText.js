@@ -1,5 +1,4 @@
 import "./MessageText.css";
-
 import React from 'react'
 
 const Message = ({text_one, text_two, text_three, type}) => {

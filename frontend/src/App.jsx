@@ -2,10 +2,11 @@ import React from 'react';
 import "./global.css"
 
 // Router Dom
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
+import { Routes, Route, Navigate } from "react-router-dom"
 
 //hooks
 import { useAuth } from "./hooks/useAuth";
+import ScrollToTop from './hooks/ScrollToTop';
 
 //Pages
 import Home from './pages/Home/Home';
@@ -28,7 +29,6 @@ const App = () => {
     <div className='container'>
         <div className='circle_position_left circle_shape circle_blur'></div>
         <div className='circle_position_right circle_shape circle_blur'></div>
-      <BrowserRouter>
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
@@ -39,7 +39,7 @@ const App = () => {
           <Route path='/login' element={<Login />} />
           <Route path='/update' element={auth ? <Update /> : <Navigate to="/"/>} />
         </Routes>
-      </BrowserRouter>
+
     </div>
     
   )

@@ -31,6 +31,7 @@ const Login = () => {
     console.log(user);
     dispath(login(user));
   };
+  
   //clean all auth states
   useEffect(() => {
     dispath(reset());

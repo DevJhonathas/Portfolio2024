@@ -20,6 +20,12 @@
     display: none;
 }
 
+@media (max-width: 1024px){
+    .messageText{
+        font-size: .8em;
+    }
+}
+
 @media (max-width: 768px){
     .messageText{
         height: 65vh;
@@ -42,18 +48,19 @@
     }
 }
 
+@media (max-width: 520px){
+    .messageText{
+        width: 80vw;
+    }
+}
+
 @media (max-width: 428px){
     .messageText{
         height: 65vh;
     }
 
     .messageText p{
+        font-size: 2em;
         width: 70vw;
-    }
-}
-
-@media (max-width: 520px){
-    .messageText{
-        width: 80vw;
     }
 }

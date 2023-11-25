@@ -126,6 +126,7 @@ h1, h2, h3, p{
   }
 }
 
+/* Responsividade */
 @media (max-width: 1440px){
   .text_about_me h1{
       font-size: 4em;
