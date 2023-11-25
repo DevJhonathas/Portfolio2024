@@ -29,3 +29,9 @@ O nome Portfolio 2024 é apenas por intuito informativo, já que informa o perí
 - React Router Dom
 - React icons
 - @Reduxjs/toolkit
+
+
+### Desginer:
+![screenshot](./resource/Portfolio_home.png)
+![screenshot](./resource/Portfolio_about.png)
+![screenshot](./resource/Portfolio_projects.png)
