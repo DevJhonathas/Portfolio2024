@@ -28,8 +28,7 @@ const Login = () => {
       password,
     };
 
-    console.log(user);
-    dispath(login(user));
+      dispath(login(user));
   };
   
   //clean all auth states
@@ -58,7 +57,7 @@ const Login = () => {
           required
           />
 
-          {!loading && <input type="submit" value="Entrar" />}
+          {!loading && <input type="submit" value="Entrar"/>}
           {loading && <input type="submit" value="Aguarde..." disabled/>}
           {error &&  <MessageValidations msg={error} type="error"/>}
         </form>
