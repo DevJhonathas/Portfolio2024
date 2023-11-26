@@ -4,18 +4,19 @@ import "./Projects.css";
 
 // images
 import laptop_projetos from "../../images/svg/tl.webp"; 
-import reactjs from "../../images/img_languages/reactjs.png";
-import css from "../../images/img_languages/css.png";
-import html from "../../images/img_languages/html.png";
-import nodejs from "../../images/img_languages/nodejs.png";
-import js from "../../images/img_languages/js.png";
-import firebase from "../../images/img_database/firebase.png";
-import mongodb from "../../images/img_database/mongodb.png";
-import postgresql from "../../images/img_database/postgresql.png";
-import sql_server from "../../images/img_database/sql_server.png";
+import reactjs from "../../images/img_languages/reactjs.webp";
+import css from "../../images/img_languages/css.webp";
+import html from "../../images/img_languages/html.webp";
+import nodejs from "../../images/img_languages/nodejs.webp";
+import js from "../../images/img_languages/js.webp";
+import firebase from "../../images/img_database/firebase.webp";
+import mongodb from "../../images/img_database/mongodb.webp";
+import postgresql from "../../images/img_database/postgresql.webp";
+import sql_server from "../../images/img_database/sql_server.webp";
 
 // Components
 import MessageWithButton from '../../components/MessageWithButton';
+import PostProjects from "../../components/PostProjects";
 
 const Projects = () => {
   return (
@@ -83,6 +84,16 @@ const Projects = () => {
               <p>SQL Server</p>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section className="section_projects">
+        <div className="text_projects">
+          <p>vejas alguns dos meus</p>
+          <span>Projetos</span>
+        </div>
+        <div>
+          <PostProjects/>
         </div>
       </section>
 
