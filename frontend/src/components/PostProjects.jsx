@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import "./PostProjects.css";
 
 const PostProjects = () => {
   return (

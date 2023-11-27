@@ -87,7 +87,7 @@ const Projects = () => {
         </div>
       </section>
 
-      <section className="section_projects">
+      <section className="section_project">
         <div className="text_projects">
           <p>vejas alguns dos meus</p>
           <span>Projetos</span>
