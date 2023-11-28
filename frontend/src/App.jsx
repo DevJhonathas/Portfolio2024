@@ -6,7 +6,6 @@ import { Routes, Route, Navigate } from "react-router-dom"
 
 //hooks
 import { useAuth } from "./hooks/useAuth";
-import ScrollToTop from './hooks/ScrollToTop';
 
 //Pages
 import Home from './pages/Home/Home';

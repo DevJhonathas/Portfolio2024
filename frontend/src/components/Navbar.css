@@ -12,6 +12,7 @@
 .container_navbar li{
     list-style-type: none;
 }
+
 .button_navbar_company{
     text-decoration: none;
     color: #ffff;
@@ -19,14 +20,16 @@
     transition:  0.5s ease-in-out;
 }
 
-.button_navbar{
+.button_navbar_desktop,
+.button_navbar_mobile{
     text-decoration: none;
     color: #ffff;
     font-size: 20px;
     transition:  0.5s ease-in-out;
 }
 
-.button_navbar:hover{
+.button_navbar_desktop:hover,
+.button_navbar_mobile:hover{
     letter-spacing: 0.2em;
 }
 
@@ -34,36 +37,47 @@
     letter-spacing: 0.1em;
 }
 
-.button_navbar:visited,
+.button_navbar_desktop:visited,
+.button_navbar_company:hover,
+.button_navbar_mobile:visited{
+    color: #ffff;
+    text-decoration: none;
+}
+
+.button_navbar_desktop:link,
+.button_navbar_mobile:link,
 .button_navbar_company:hover{
     color: #ffff;
     text-decoration: none;
 }
 
-.button_navbar:link,
-.button_navbar_company:hover{
-    color: #ffff;
-    text-decoration: none;
-}
-
-/* Is logged in*/
-.company_name_logged{
+.company_name_desktop{
     font-size: 24px;    
     font-weight: bold;
     text-transform: uppercase;
     color: #ffff;
 }
 
-/* Not logged in */
-.company_name_not_logged{
-    font-size: 24px;    
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #ffff;
+.mobile_container{
+    display: none;
 }
 
-@media (max-width: 768px){
-    .container_navbar ul{
+@media (max-width: 1315px){
+    .ul_desktop_navbar li{
         display: none;
+    }
+    .company_name_desktop{
+        display: none;
+    }
+    
+    .mobile_container{
+        display: flex;
+    }
+
+    .company_name_mobile{
+        font-size: 24px;    
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #ffff;
     }
 }

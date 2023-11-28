@@ -125,8 +125,8 @@
     }
 
     /* section languages */;    
-    .img_languages p{
-        font-size:1em;
+    .paragrahp_languages{
+        font-size:10em;
     }
     
     .img_languages li{
@@ -141,8 +141,8 @@
     }
 
     /* section database */;    
-    .img_database p{
-        font-size:.9em;
+    .img_languages p{
+        font-size:0em;
     }
     
     .img_database li{

@@ -8,7 +8,9 @@ import reactjs from "../../images/img_languages/reactjs.webp";
 import css from "../../images/img_languages/css.webp";
 import html from "../../images/img_languages/html.webp";
 import nodejs from "../../images/img_languages/nodejs.webp";
+import ts from "../../images/img_languages/Typescript.png";
 import js from "../../images/img_languages/js.webp";
+import java from "../../images/img_languages/java.png";
 import firebase from "../../images/img_database/firebase.webp";
 import mongodb from "../../images/img_database/mongodb.webp";
 import postgresql from "../../images/img_database/postgresql.webp";
@@ -39,23 +41,31 @@ const Projects = () => {
           <ul>
             <li>
               <img src={reactjs} alt="Reactjs" />
-              <p>React.js</p>
+              <p className="paragrahp_languages">React.js</p>
             </li>
             <li>
               <img src={html} alt="HTML" />
-              <p>HTML</p>
+              <p className="paragrahp_languages">HTML</p>
             </li>
             <li>
               <img src={css} alt="CSS" />
-              <p>CSS</p>
+              <p className="paragrahp_languages">CSS</p>
             </li>
             <li>
               <img src={js} alt="Javascript" />
-              <p>Javascript</p>
+              <p className="paragrahp_languages">Javascript</p>
             </li>
             <li>
               <img src={nodejs} alt="Nodejs" />
-              <p>Node.js</p>
+              <p className="paragrahp_languages">Node.js</p>
+            </li>
+            <li>
+              <img src={java} alt="Java" />
+              <p className="paragrahp_languages">Java</p>
+            </li>
+            <li>
+              <img src={ts} alt="Typescript" />
+              <p className="paragrahp_languages">Typescript</p>
             </li>
           </ul>
         </div>
