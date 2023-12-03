@@ -6,7 +6,7 @@ import { reset, login } from "../../../slices/authSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 //Componts
-import MessageValidations from "../../../components/MessageValidations";
+import MessageValidations from "../../../components/Messages/MessageValidations";
 
 //hook
 import { useState, useEffect } from "react";

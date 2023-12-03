@@ -1,24 +1,25 @@
-import React, {useEffect, useRef, useState} from 'react'
+import React, {useRef, useState, useEffect} from 'react'
 
 //CSS
 import "./Create.css"
 
 //Hooks
-import { useAuth } from "../../../hooks/useAuth";
-import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
-import MessageValidations from '../../../components/MessageValidations';
+import MessageValidations from '../../../components/Messages/MessageValidations';
+import {useParams} from "react-router-dom";
 
 //redux
 import { publishPhoto, resetMessage } from '../../../slices/photoSlice';
+import { getUserDetails } from '../../../slices/userSlice';
 
 const Create = () => {
-  const { auth } = useAuth();
   const {id} = useParams();
   const dispath = useDispatch();
-
-  const {user: userAuth} = useSelector((state) => state.auth);
-  const {photos, loading, message:messagePhoto, error: errorPhoto} = useSelector((state) => state.photo)
+  
+  
+  const {loading} = useSelector((state) => state.user) 
+  const {user: userAuth} = useSelector((state) => state.auth)
+  const {loading:loadingPhoto, message:messagePhoto, error: errorPhoto} = useSelector((state) => state.photo)
 
   const [title, setTitle] = useState("")
   const [image, setImage] = useState("")
@@ -28,7 +29,14 @@ const Create = () => {
 
   //New form and edit form refs
   const newPhotoForm = useRef()
-  const editPhotoForm = useRef()
+
+  useEffect(() => {
+    dispath(getUserDetails(id));
+  },[dispath, id]);
+
+  if(loading){
+    return <p>Carregando...</p>
+  }
 
   const handleFile = (e) => {
     //image preview
@@ -86,8 +94,8 @@ const Create = () => {
                 <span>Quais linguagens foram utilizadas:</span>
                 <input type="text" placeholder='Insira as linguagens de programação/texto:' onChange={(e) => setLanguage(e.target.value)} value={language || ""}/>
               </label>
-              {!loading && <input type="submit" value="Postar"/>}
-              {loading && <input type="submit" disabled value="Aguarde..."/>}
+              {!loadingPhoto && <input type="submit" value="Postar"/>}
+              {loadingPhoto && <input type="submit" disabled value="Aguarde..."/>}
             </form>
           </div>
           {errorPhoto && <MessageValidations msg={errorPhoto} type="error" />}

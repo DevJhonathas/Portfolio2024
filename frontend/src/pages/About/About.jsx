@@ -14,8 +14,8 @@ import brasil from "../../images/brasil.png";
 import eua from "../../images/eua.png";
 
 //Components
-import MessageText from '../../components/MessageText';
-import MessageWithButton from '../../components/MessageWithButton';
+import MessageText from '../../components/Messages/MessageText';
+import MessageWithButton from '../../components/Messages/MessageWithButton';
 
 const About = () => {
   return (

@@ -20,9 +20,6 @@ const logout = async () => {
     localStorage.removeItem("user")
 }
 
-//Get user details
-
-
 const authService = {
     login,
     logout,

@@ -17,7 +17,7 @@ import postgresql from "../../images/img_database/postgresql.webp";
 import sql_server from "../../images/img_database/sql_server.webp";
 
 // Components
-import MessageWithButton from '../../components/MessageWithButton';
+import MessageWithButton from '../../components/Messages/MessageWithButton';
 import PostProjects from "../../components/PostProjects";
 
 const Projects = () => {

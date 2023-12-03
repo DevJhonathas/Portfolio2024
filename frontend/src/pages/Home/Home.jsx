@@ -13,7 +13,7 @@ import brasil from "../../images/brasil.png";
 import eua from "../../images/eua.png";
 
 //Components
-import MessageWithButton from '../../components/MessageWithButton';
+import MessageWithButton from '../../components/Messages/MessageWithButton';
 
 const Home = () => {
   return (
