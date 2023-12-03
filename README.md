@@ -42,7 +42,7 @@ O nome Portfolio 2024 é apenas por intuito informativo, já que informa o perí
 - React Router Dom
 - React icons
 - @Reduxjs/toolkit
-- 
+
 <br><br>
 
 ### Desginer:
