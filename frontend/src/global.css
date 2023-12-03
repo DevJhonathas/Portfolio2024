@@ -1,8 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;700&family=Roboto:wght@400;500&display=swap');
 
 :root{
-  --background-color: #070821;
+  --bkg-color: #070821;
   --color-text:  #ffff;
+  --component-my-skill: #493AC8;
+  --bkg-balls: rgb(74, 55, 249, .9);
+  --component-msg-with-btn-blue: #ABD9D9;
+  --component-msg-with-btn-purple: #3628B4
+}
+
+.white-mode{
+  --bkg-color: #EEEEEE;
+  --color-text:  #0000;
+  --component-my-skill: #D9D9D9;
+  --bkg-balls: #EEEEEE;
+  --component-msg-with-btn-left: #FFFFFF;
+  --component-msg-with-btn-rifht: #D9D9D9;
 }
 
 html, body{
@@ -14,11 +27,11 @@ html, body{
 
 body{
   font-family: 'Outfit', sans-serif;
-  background-color: var(--background-color);
+  background-color: var(--bkg-color);
   height: 100%;
 }
 
-h1, h2, h3, p{
+h1, h2, h3, p, span{
   color: var(--color-text);
 }
 
@@ -29,7 +42,7 @@ h1, h2, h3, p{
 .circle_shape{
   width: 780px;
   height: 780px;
-  box-shadow: inset 0px 0px 200px 525px rgb(74, 55, 249, .9);
+  box-shadow: inset 0px 0px 200px 525px var(--bkg-balls);
   position: absolute;
 }
 

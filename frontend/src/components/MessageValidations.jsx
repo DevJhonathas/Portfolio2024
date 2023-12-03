@@ -2,7 +2,7 @@ import "./MessageValidations.css";
 
 import React from 'react'
 
-const Message = ({msg, type}) => {
+const MessageValidations = ({msg, type}) => {
   return (
     <div className={`message ${type}`}>
         <p>{msg}</p>
@@ -10,4 +10,4 @@ const Message = ({msg, type}) => {
   )
 }
 
-export default Message
+export default MessageValidations
