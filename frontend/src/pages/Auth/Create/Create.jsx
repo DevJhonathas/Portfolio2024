@@ -16,8 +16,6 @@ const Create = () => {
   const {id} = useParams();
   const dispath = useDispatch();
   
-  
-  const {loading} = useSelector((state) => state.user) 
   const {user: userAuth} = useSelector((state) => state.auth)
   const {loading:loadingPhoto, message:messagePhoto, error: errorPhoto} = useSelector((state) => state.photo)
 
@@ -34,9 +32,7 @@ const Create = () => {
     dispath(getUserDetails(id));
   },[dispath, id]);
 
-  if(loading){
-    return <p>Carregando...</p>
-  }
+
 
   const handleFile = (e) => {
     //image preview
