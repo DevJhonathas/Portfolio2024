@@ -69,13 +69,12 @@ const projectController = {
             const project = await Project.findById(id);
 
             if(!project){
-                res.status(204).json({msg: "Project not found!"});
+                res.status(404).json({msg: "Project not found!"});
                 return;
             }
 
             const deleteProject = await Project.findByIdAndDelete(id);
             res.status(200).json({deleteProject, msg: "Project deleted!"})
-            res.json(project);
 
         } catch (error) {
             res.status(404).json({msg: "Project not found"});
@@ -93,7 +92,7 @@ const projectController = {
 
         const updateProject =  await Project.findByIdAndUpdate(id, project);
         if(!updateProject){
-            res.status(204).json({msg: "Project not found!"});
+            res.status(404).json({msg: "Project not found!"});
             return;
         }
 

@@ -56,7 +56,6 @@ const userController = {
 
             const {id} =  req.params;
             const login = await User.findById(new mongoose.Types.ObjectId({id})).select("-password");
-            console.log(login);
             if(!login){
                 res.status(204).json({msg: "User not found!"});
                 return;
