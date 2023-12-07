@@ -15,7 +15,7 @@ app.use(cors(({credentials: true, origin:`${process.env.PORT_FRONT}`})));
 app.use(express.json());  
 
 //Uploads
-app.use("/uploads", express.static(path.join(__dirname, "uploads")));
+app.use('/uploads', express.static(path.resolve(__dirname, 'uploads', 'photos')));
 
 //Db Connection:
 const conn = require("./db/conn");
