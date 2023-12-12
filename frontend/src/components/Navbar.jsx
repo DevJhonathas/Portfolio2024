@@ -27,12 +27,17 @@ const Navbar = () => {
   }
   console.log(handleLogout)
   return (
-    <div className='container_navbar'>
+    <nav className='container_navbar'>
       <div className='company_name_desktop'>
         <p>
           <NavLink to="/" className="button_navbar_company">portfolio</NavLink>
         </p>
       </div>
+      <div className="burguer-menu">
+        <div className="burger_class"></div>
+        <div className="burger_class"></div>
+        <div className="burger_class"></div>
+        </div>
       <ul className='ul_desktop_navbar'>
         {auth ? (
           <>
@@ -120,7 +125,7 @@ const Navbar = () => {
           )}
         </ul>
       </div>
-    </div>
+    </nav>
   )
 }
 

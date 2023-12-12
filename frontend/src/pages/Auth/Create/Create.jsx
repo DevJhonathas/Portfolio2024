@@ -24,15 +24,8 @@ const Create = () => {
   const [description, setDescription] = useState("")
   const [language, setLanguage] = useState("")
 
-
   //New form and edit form refs
   const newPhotoForm = useRef()
-
-  useEffect(() => {
-    dispath(getUserDetails(id));
-  },[dispath, id]);
-
-
 
   const handleFile = (e) => {
     //image preview
