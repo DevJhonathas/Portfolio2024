@@ -20,7 +20,6 @@ const PostProjects = () => {
   const dispatch = useDispatch();
 
   const {photos} = useSelector((state) => state.photo);
-  console.log(photos)
   useEffect(() => {
     dispatch(getUserPhotos(id));
   }, [dispatch, id]);
@@ -30,16 +29,17 @@ const PostProjects = () => {
       <div className="card-conteiner">
         {photos && photos.map((photo) => (
           <article className="article-photos-projects" key={photo._id}>
-            {photo.image && (<img src={`${photos_uploads}${photo.image}`} alt={photo.title} className='card-img'/>)}
-
+            <NavLink to={`/projects/${photo._id}`}>
+              {photo.image && (<img src={`${photos_uploads}${photo.image}`} alt={photo.title} className='card-img'/>)}
+            </NavLink>
             <div className="card-data">
               <h2 className='card-title'>{photo.title}</h2>
               <span className="card-description">{photo.description}</span>
-              <span className='card-tags'>{photo.language}</span>
               <ul className='card-list'>
                 <li>
-                  <NavLink to="/" className="card-buttons">Leia mais</NavLink>
+                  <NavLink to={`/projects/${photo._id}`} className="card-buttons">Leia mais</NavLink>
                 </li>
+                <li><a href="https://github.com/DevJhonathas?tab=repositories&q=&type=&language=&sort=" className="card-buttons">Repositórios</a></li>
               </ul>
             </div>
           </article>

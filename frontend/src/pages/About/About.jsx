@@ -80,13 +80,19 @@ const About = () => {
         </div>
         <div className="subtitle courses_text_about">
             <ul className='courses_list'>
-              <h3>Cursos | idomas</h3>
+              <div>
+                <h3>Cursos | idomas</h3>
+              </div>
               <li><span>Full-stack</span> - Danki Code</li>
               <li><span>Web Designer</span> - Prepara cursos</li>
               <li><span>Programador</span> - Prepara Cursos</li>
               <li><span>React do zero</span> - Udemy</li>
               <li><span>Docker para desenvolvedores</span> - Udemy</li>
-              <li><span>PHP do zero a maestria</span> - udemy</li>
+              <li><span>PHP do zero a maestria</span> - Udemy</li>
+              <li><span>CSS - The Complete Guide 2023</span> - Udemy</li>
+              <li><span>NodeJS - The Complete Guide</span> - Udemy</li>
+              <li><span>Iniciando no desenvolvimento de API</span> - Udemy</li>
+              <li><span>Curso completo de APIs com Nodejs</span> - Udemy</li>
             </ul>
             <ul className="language_list">
               <li><img src={brasil} className='bandeiras' alt="brasil" /> PT-BR Falante nativo</li>

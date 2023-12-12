@@ -3,6 +3,7 @@
     place-items: center;
     width: 100%;
     padding-block: 5rem;
+    font-family: 'Outfit', sans-serif;
 }
 
 .card-conteiner{
@@ -24,7 +25,7 @@
 
 .card-data{
     width: 95%;
-    padding: 1.5rem 0 2rem 1rem;
+    padding: 1.5rem 2rem 2rem 1rem;
     background: linear-gradient(to right, #1b1d52, 30%, #33279e);
     box-shadow: 0 8px 24px hsla(248, 44%, 26%, 0.15);
     border-radius: 1rem;
@@ -38,26 +39,48 @@
 
 .card-description{
     display: block;
+    text-align: center;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical; 
     margin-bottom: .25rem;
+    font-size: 1.2em;
 }
 
 .card-title{
-    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
     margin-bottom: .75rem;
+    text-align: center;
 }
+/* 
+.card-tags{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+} */
 
 .card-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
     list-style: none;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 .card-buttons{
+    font-size: 24px;
     text-decoration: none;
     color: #ffff;
     font-weight: 500;
@@ -117,7 +140,7 @@
         transform: translateY(-10rem);
     }
     50%{
-        transform: translateY(-20rem);
+        transform: translateY(-21.5rem);
     }
     100%{
         transform: translateY(.5rem);
