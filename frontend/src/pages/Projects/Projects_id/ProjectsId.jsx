@@ -9,6 +9,9 @@ import {useDispatch, useSelector} from "react-redux";
 import {useParams} from "react-router-dom";
 import { photos_uploads } from '../../../utils/config';
 
+//CSS
+import "./ProjectsId.css";
+
 //Router Dom
 // import { NavLink } from 'react-router-dom';
 
@@ -23,15 +26,23 @@ const Projects_Id = () => {
     
   return (
     <div className='container-ProjectId'>
-      
       {photos.map((photo) => photo._id === id && (
         <div className='container-ProjectId' key={photo._id}>
-          <p>{photo.title}</p>
-          {photo.image && (<img src={`${photos_uploads}${photo.image}`} alt={photo.title} className='card-img'/>)}
-          <p>{photo.description}</p>
-          <p>{photo.language}</p>
+          <div className='title-project'>
+            <p>{photo.title}</p>
+          </div>
+          <div className="img-project">
+            {photo.image && (<img src={`${photos_uploads}${photo.image}`} alt={photo.title} className='card-img-project'/>)}
+          </div>
+          <div className="card-data-project">
+            <div className="info-project">
+              <p>{photo.description}</p>
+              <p>Linguagens/Bibliotecas/Banco de dados: <span>{photo.language}</span></p>
+            </div>
+          </div>
         </div>
       ))}
+
     </div>
   )
 }
