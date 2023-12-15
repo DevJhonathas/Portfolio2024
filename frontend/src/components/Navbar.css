@@ -69,27 +69,41 @@
     display: none;
 }
 
-@media (max-width: 1315px){
-    .ul_desktop_navbar{
-        display: inline;
+@media (max-width: 1200px){
+    .mobile_container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0; margin: 0;
     }
 
-    .div_list_mobile{
-        display: flex;
+    .container_navbar{
+        display:inline;
+    }
+
+    .burguer-button{
+        color: white;
+        font-size: 3.5em;
+        cursor: pointer;
+    }
+    .div_list_mobile,
+    .ul_mobile_navbar{
+        display: none;
         flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .active{
+        display: flex;
     }
 
     .company_name_mobile{
         display: flex;
-        justify-content: space-between;
     }
 
     .company_name_desktop{
         display: none;
-    }
-    
-    .mobile_container{
-        display: flex;
     }
 
     .company_name_mobile{
