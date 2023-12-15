@@ -13,6 +13,12 @@ import { useNavigate } from 'react-router-dom';
 // redux
 import { logout, reset } from '../slices/authSlice';
 
+
+//icons
+import { IoIosHome } from "react-icons/io";
+import { AiFillProject } from "react-icons/ai";
+import { BsFillQuestionCircleFill  } from "react-icons/bs";
+
 const Navbar = () => {
   const { auth } = useAuth();
 
@@ -33,11 +39,7 @@ const Navbar = () => {
           <NavLink to="/" className="button_navbar_company">portfolio</NavLink>
         </p>
       </div>
-      <div className="burguer-menu">
-        <div className="burger_class"></div>
-        <div className="burger_class"></div>
-        <div className="burger_class"></div>
-        </div>
+
       <ul className='ul_desktop_navbar'>
         {auth ? (
           <>
@@ -48,7 +50,7 @@ const Navbar = () => {
               <NavLink to="/projects" className='button_navbar_desktop'>Projetos</NavLink>
             </li>
             <li>
-              <NavLink to="/about" className='button_navbar_desktop'>About</NavLink>
+              <NavLink to="/about" className='button_navbar_desktop'>Sobre mim</NavLink>
             </li>
             <li>
               <NavLink to="/dashboard" className='button_navbar_desktop'>Dashboard</NavLink>
@@ -72,7 +74,7 @@ const Navbar = () => {
               <NavLink to="/projects" className='button_navbar_desktop'>Projetos</NavLink>
             </li>
             <li>
-              <NavLink to="/about" className='button_navbar_desktop'>About</NavLink>
+              <NavLink to="/about" className='button_navbar_desktop'>Sobre mim</NavLink>
             </li>
           </>
         )}
@@ -87,7 +89,7 @@ const Navbar = () => {
 
         <ul className="ul_mobile_navbar">
           {auth ? (
-            <>
+            <div className='div_list_mobile'>
               <li>
                 <NavLink to="/" className='button_navbar_mobile'>Home</NavLink>
               </li>
@@ -95,7 +97,7 @@ const Navbar = () => {
                 <NavLink to="/projects" className='button_navbar_mobile'>Projetos</NavLink>
               </li>
               <li>
-                <NavLink to="/about" className='button_navbar_mobile'>About</NavLink>
+                <NavLink to="/about" className='button_navbar_mobile'>Sobre mim</NavLink>
               </li>
               <li>
                 <NavLink to="/dashboard" className='button_navbar_mobile'>Dashboard</NavLink>
@@ -109,9 +111,9 @@ const Navbar = () => {
               <li>
                 <span onClick={handleLogout} className='button_navbar_mobile'>Sair</span>
               </li>
-            </>
+            </div>
           ) : (
-            <>
+            <div className='div_list_mobile'>
               <li>
                 <NavLink to="/" className='button_navbar_mobile'>Home</NavLink>
               </li>
@@ -119,9 +121,9 @@ const Navbar = () => {
                 <NavLink to="/projects" className='button_navbar_mobile'>Projetos</NavLink>
               </li>
               <li>
-                <NavLink to="/about" className='button_navbar_mobile'>About</NavLink>
+                <NavLink to="/about" className='button_navbar_mobile'>Sobre mim</NavLink>
               </li>
-            </>
+            </div>
           )}
         </ul>
       </div>

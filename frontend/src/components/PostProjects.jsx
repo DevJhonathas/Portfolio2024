@@ -39,8 +39,8 @@ const PostProjects = () => {
                 <li>
                   <NavLink to={`/projects/${photo._id}`} className="card-buttons">Leia mais</NavLink>
                 </li>
-                <li><a href="https://github.com/DevJhonathas?tab=repositories&q=&type=&language=&sort=" className="card-buttons">Repositórios</a></li>
-              </ul>
+                <li><a href="https://github.com/DevJhonathas" className="card-buttons">Repositórios</a></li>
+              </ul>   
             </div>
           </article>
         ))}

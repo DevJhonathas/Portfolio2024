@@ -42,7 +42,6 @@ const Projects_Id = () => {
           </div>
         </div>
       ))}
-
     </div>
   )
 }

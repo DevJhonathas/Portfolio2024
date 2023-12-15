@@ -20,6 +20,13 @@
     transition:  0.5s ease-in-out;
 }
 
+.button_navbar_desktop li{
+    flex-direction: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
 .button_navbar_desktop,
 .button_navbar_mobile{
     text-decoration: none;
@@ -63,9 +70,20 @@
 }
 
 @media (max-width: 1315px){
-    .ul_desktop_navbar li{
-        display: none;
+    .ul_desktop_navbar{
+        display: inline;
     }
+
+    .div_list_mobile{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .company_name_mobile{
+        display: flex;
+        justify-content: space-between;
+    }
+
     .company_name_desktop{
         display: none;
     }
@@ -79,5 +97,13 @@
         font-weight: bold;
         text-transform: uppercase;
         color: #ffff;
+    }
+
+    .ul_desktop_navbar,
+    .button_navbar_desktop,
+    .company_name_desktop,
+    .ul_desktop_navbar ul{
+        display: none;
+        padding: 0; margin: 0;
     }
 }
