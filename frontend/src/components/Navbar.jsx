@@ -28,58 +28,56 @@ const Navbar = () => {
   }
   console.log(handleLogout)
   return (
-    <nav className='container_navbar'>
-      <div className="container_desktop">
+    <nav>
+      <div className="container_navbar">
         <div className='company_name_desktop'>
           <p>
             <NavLink to="/" className="button_navbar_company">portfolio</NavLink>
           </p>
         </div>
-
-      <div>
-      <ul className='ul_desktop_navbar'>
-          {auth ? (
-            <>
-              <li>
-                <NavLink to="/" className='button_navbar_desktop'>Home</NavLink>
-              </li>
-              <li>
-                <NavLink to="/projects" className='button_navbar_desktop'>Projetos</NavLink>
-              </li>
-              <li>
-                <NavLink to="/about" className='button_navbar_desktop'>Sobre mim</NavLink>
-              </li>
-              <li>
-                <NavLink to="/dashboard" className='button_navbar_desktop'>Dashboard</NavLink>
-              </li>
-              <li>
-                <NavLink to="/create" className='button_navbar_desktop'>Create</NavLink>
-              </li>
-              <li>
-                <NavLink to="/update" className='button_navbar_desktop'>Update</NavLink>
-              </li>
-              <li>
-                <span onClick={handleLogout} className='button_navbar_desktop'>Sair</span>
-              </li>
-            </>
-          ) : (
-            <>
-              <li>
-                <NavLink to="/" className='button_navbar_desktop'>Home</NavLink>
-              </li>
-              <li>
-                <NavLink to="/projects" className='button_navbar_desktop'>Projetos</NavLink>
-              </li>
-              <li>
-                <NavLink to="/about" className='button_navbar_desktop'>Sobre mim</NavLink>
-              </li>
-            </>
-          )}
-        </ul>
+        <div>
+          <ul className='ul_desktop_navbar'>
+              {auth ? (
+                <div>
+                  <li>
+                    <NavLink to="/" className='button_navbar_desktop'>Home</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/projects" className='button_navbar_desktop'>Projetos</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/about" className='button_navbar_desktop'>Sobre mim</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/dashboard" className='button_navbar_desktop'>Dashboard</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/create" className='button_navbar_desktop'>Create</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/update" className='button_navbar_desktop'>Update</NavLink>
+                  </li>
+                  <li>
+                    <span onClick={handleLogout} className='button_navbar_desktop'>Sair</span>
+                  </li>
+                </div>
+              ) : (
+                <div>
+                  <li>
+                    <NavLink to="/" className='button_navbar_desktop'>Home</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/projects" className='button_navbar_desktop'>Projetos</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/about" className='button_navbar_desktop'>Sobre mim</NavLink>
+                  </li>
+                </div>
+              )}
+          </ul>
+        </div>
       </div>
-    </div>
-
-    <MobileNavbar />
+      <MobileNavbar/>
     </nav>
   )
 }

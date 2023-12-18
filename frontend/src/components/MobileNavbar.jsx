@@ -14,10 +14,11 @@ import { useNavigate } from 'react-router-dom';
 
 // redux
 import { logout, reset } from '../slices/authSlice';
-import Navbar_mobile from './MobileNavbar';
+
 
 //CSS
 import "./Navbar.css";
+import { useEffect, useState } from "react";
 
 const MobileNavbar = () => {
     const { auth } = useAuth();
@@ -31,8 +32,15 @@ const MobileNavbar = () => {
   
       navigate("/");
     }
+
+    const [burgerToggle, setBurgerToggle] = useState(false);
+
+    useEffect(() => {
+      setBurgerToggle(burgerToggle == true);
+    });
+
   return (
-    <nav className="container_navbar"> 
+    <nav className="container_navbar_mobile"> 
       <div className="mobile_container">
         <div className='company_name_mobile'>
           <p>
@@ -40,9 +48,13 @@ const MobileNavbar = () => {
           </p>
         </div>
           
-        <div className="burguer-button">
-            <IoMenu/>
-            <ul className="ul_mobile_navbar">
+        <div className="burger-button">
+          <aside>
+            <button className="burger" onClick={() => setBurgerToggle(burgerToggle + 1)}>
+              <IoMenu/>
+            </button> 
+            
+            <ul className="ul_mobile_navbar" id={burgerToggle ? "active" : "no_active"}>
               {auth ? (
                 <div className='div_list_mobile'>
                   <li>
@@ -81,6 +93,7 @@ const MobileNavbar = () => {
                 </div>
               )}
             </ul>
+          </aside>
         </div>
       </div>
     </nav>
