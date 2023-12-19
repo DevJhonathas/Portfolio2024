@@ -1,0 +1,18 @@
+.footer-container{
+    position: relative;
+    background: linear-gradient(to right top, var(--component-my-skill), 70%, var(--bkg-color));
+    height: 8em;
+}
+
+.container-lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container-lista li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 10%;
+}

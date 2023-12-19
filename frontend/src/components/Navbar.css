@@ -102,7 +102,6 @@
     display: inline;
 }
 
-
 /* Media queries */
 @media (max-width: 1200px){
     .ul_mobile_navbar li{

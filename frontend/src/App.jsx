@@ -18,6 +18,7 @@ import Create from './pages/Auth/Create/Create';
 import Login from './pages/Auth/Login/Login';
 import Update from './pages/Auth/Update/Update';
 import ProjectsId from './pages/Projects/Projects_id/ProjectsId';
+import Footer from "./components/Footer";
 
 const App = () => {
   const {auth, loading} = useAuth();
@@ -27,7 +28,8 @@ const App = () => {
   }
 
   return (
-    <div className='container'>
+    <div>
+      <div className="container">
         <div className='circle_position_left circle_shape circle_blur'></div>
         <div className='circle_position_right circle_shape circle_blur'></div>
         <Navbar />
@@ -41,6 +43,8 @@ const App = () => {
           <Route path='/login' element={<Login />} />
           <Route path='/update' element={auth ? <Update /> : <Navigate to="/"/>} />
         </Routes>
+        </div>
+      <Footer />
     </div>
     
   )

@@ -26,7 +26,6 @@ const Navbar = () => {
 
     navigate("/");
   }
-  console.log(handleLogout)
   return (
     <nav>
       <div className="container_navbar">

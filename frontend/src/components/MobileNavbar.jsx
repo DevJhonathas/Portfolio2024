@@ -37,6 +37,7 @@ const MobileNavbar = () => {
 
     useEffect(() => {
       setBurgerToggle(burgerToggle == true);
+      
     });
 
   return (
