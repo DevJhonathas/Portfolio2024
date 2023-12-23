@@ -2,6 +2,8 @@
     position: relative;
     background: linear-gradient(to right top, var(--component-my-skill), 70%, var(--bkg-color));
     height: 8em;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .container-lista{
