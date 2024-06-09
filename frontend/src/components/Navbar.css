@@ -1,0 +1,139 @@
+.container_navbar{
+    display: flex;
+    position: relative;
+    justify-content: space-between;    
+}
+
+.container_navbar ul{
+    display: flex;
+    gap: 20px;
+}
+
+.container_navbar li{
+    list-style-type: none;
+}
+
+.container_navbar_mobile,
+.mobile_container{
+    display: none;
+    padding: 0; margin: 0;
+    position: relative;
+}
+
+.button_navbar_company{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 24px;
+    transition:  0.5s ease-in-out;
+}
+
+.button_navbar_desktop li{
+    flex-direction: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.button_navbar_desktop,
+.button_navbar_mobile{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 20px;
+    transition:  0.5s ease-in-out;
+}
+
+.button_navbar_desktop:hover,
+.button_navbar_mobile:hover{
+    letter-spacing: 0.2em;
+}
+
+.button_navbar_company:hover{
+    letter-spacing: 0.1em;
+}
+
+.button_navbar_desktop:visited,
+.button_navbar_company:hover,
+.button_navbar_mobile:visited{
+    color: #ffff;
+    text-decoration: none;
+}
+
+.button_navbar_desktop:link,
+.button_navbar_mobile:link,
+.button_navbar_company:hover{
+    color: #ffff;
+    text-decoration: none;
+}
+
+.company_name_desktop{
+    font-size: 24px;    
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffff;
+}
+
+.mobile_container{
+    display: none;
+}
+
+.ul_desktop_navbar div{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* Burguer button */
+.burger{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 52px;
+    color: var(--color-text);
+    background-color: hsla(0, 0%, 0%, 0);
+    border: none;
+}
+#no_active{
+    display: none;
+}
+
+#active{
+    display: inline;
+}
+
+/* Media queries */
+@media (max-width: 1200px){
+    .ul_mobile_navbar li{
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        gap: 20px;
+    }
+
+    .container_navbar_mobile{
+        display: inline;
+    }
+
+    .mobile_container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0; margin: 0;
+    }
+
+    .company_name_desktop,
+    .container_navbar{
+        display: none;
+    }
+    
+    .company_name_mobile{
+        display: flex;
+        font-size: 24px;    
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #ffff;
+    }
+}

@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;700&family=Roboto:wght@400;500&display=swap');
+
+:root{
+  --bkg-color: #070821;
+  --color-text:  #ffff;
+  --component-my-skill: #493AC8;
+  --bkg-balls: rgb(74, 55, 249, .9);
+  --component-msg-with-btn-blue: #ABD9D9;
+  --component-msg-with-btn-purple: #3628B4
+}
+
+.white-mode{
+  --bkg-color: #EEEEEE;
+  --color-text:  #0000;
+  --component-my-skill: #D9D9D9;
+  --bkg-balls: #EEEEEE;
+  --component-msg-with-btn-left: #FFFFFF;
+  --component-msg-with-btn-rifht: #D9D9D9;
+}
+
+html, body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body{
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--bkg-color);
+  height: 100%;
+}
+
+h1, h2, h3, p, span{
+  color: var(--color-text);
+}
+
+.container{
+ margin: 32px 20% 50px 20%;
+}
+
+.circle_shape{
+  width: 780px;
+  height: 780px;
+  box-shadow: inset 0px 0px 200px 525px var(--bkg-balls);
+  position: absolute;
+}
+
+.circle_blur{
+  filter: blur(200px);
+}
+
+.circle_position_left{
+  top: -10px;
+  left: -5px;
+}
+
+.circle_position_right{
+  top: 300px;
+  right: 0px;
+}
+
+.subtitle h3{
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+/* Icones de rede sociais */
+.icons_rede_social ul{
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.img_icons_rede_sociais{
+  width: 5vw;
+  height: 100px;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Texto inicial de cada página about/home/projcts */
+.text_about_me{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: capitalize;
+  max-width: 25vw;
+}
+
+.text_about_me h1{
+  font-size: 6em;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+.text_about_me p{
+  font-size: 2em;
+  font-weight: 600;
+  max-width: 25vw;
+  text-align: center;
+}
+
+/* Keyframes  */
+.slideInLeft{
+  animation: slideInLeft .8s ease .2s both; 
+}
+
+.slideInRight{
+  animation: slideInRight .8s ease .2s both; 
+}
+
+@keyframes slideInLeft{
+  from{
+      transform: translateX(90vw);
+  }
+
+  to{
+      transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight{
+  from{
+      transform: translateX(-90vw);
+  }
+
+  to{
+      transform: translateX(0);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 1440px){
+  .text_about_me h1{
+      font-size: 4em;
+  }
+
+  .text_about_me p{
+      font-size: 2em;
+  }
+  .slideInLeft{
+    animation: slideInLeft .8s ease-in-out .2s both; 
+  }
+  
+  .slideInRight{
+    animation: slideInRight .8s ease-in-out .2s both; 
+  }
+}
+
+@media (max-width: 1280px){
+  .text_about_me h1{
+    padding: 0px;
+  }
+}
+
+@media (max-width: 768px){
+  .circle_shape{
+    width: 350px;
+    height: 350px;
+    box-shadow: inset 0px 0px 200px 525px rgb(74, 55, 249, .9);
+  }
+
+  .circle_blur{
+    filter: blur(120px);
+  }
+
+  .circle_position_right{
+    top: 450px;
+  }
+
+  .img_icons_rede_sociais{
+    width: 20vw;
+  }
+  
+  .text_about_me h1{
+    margin-top: 10px;
+    font-size: 4em;
+    margin-bottom: -20px;
+  }
+
+  .text_about_me p{
+      font-size: 1.5em;
+      max-width: 70vw;
+  }
+}
+
+@media (max-width: 490px){
+  .text_about_me{
+    max-width: 75vw;
+  }
+  .text_about_me h1{
+    font-size: 2.5em;
+  }
+}

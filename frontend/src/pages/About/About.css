@@ -1,0 +1,243 @@
+.container_about{
+    position: relative;
+}
+
+.section_hero_about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.img_balao_duvida{
+    max-width: 500px;
+}
+
+/* About */
+.section_objetivo_about{
+    margin-top: 10%;
+    font-size: 1.2em;
+    letter-spacing: 1px; 
+}
+
+/* School */
+.falling_books_about{
+    width: 20vw;
+    height: 50vh;
+}
+
+.section_school_about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+
+.section_school_about h2{
+    font-size: 3em;
+    width: 600px;
+}
+
+.section_school_about p{
+    margin-top: -20px;
+    font-size: 1.8em;
+    font-weight: 400;
+    width: 600px;
+}
+
+.img_falling_books_about{
+    max-width: 400px;
+}
+
+/* Courses */
+.section_courses_about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10%;
+    color: #ffff;
+}
+
+.courses_text_about li{
+    list-style: none;
+}
+
+.courses_text_about span,
+.courses_text_about li{
+    font-size: 1.2em;
+}
+.courses_text_about span{
+    font-weight: 600;
+}
+
+.language_list .bandeiras{
+    width: 20px;
+}
+
+.img_books_and_apple{
+    max-width: 400px;
+}
+
+/* Responsividade */
+@media (max-width: 1440px){
+    .section_hero_about{
+        justify-content: space-between;
+        margin-top: 5%;
+    }
+
+    .img_balao_duvida{
+        width: 20vw;
+    }
+
+    .section_objetivo_about{
+        font-size: .8em;
+    }
+
+    .section_school_about{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    .school_text_about{
+        text-align: center;
+    }
+
+    .school_text_about p{
+        font-size: 1.5em;
+    }
+
+    .img_falling_books_about{
+        width: 40vw;
+        height: 50vh;
+        margin-bottom: 30px;
+        margin-top: 10%;
+    }
+
+    .section_courses_about{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .img_books_and_apple{
+        width: 40vw;
+        height: 50vh;
+        margin-bottom: 30px;
+        margin-top: 10%;
+    }
+    
+    .courses_text_about{
+        text-align: center;
+    }
+
+    .section_projects h1{
+        font-size: 4em;
+    }
+    
+    .section_projects p{
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 1024px){
+    .section_objetivo_about{
+        font-size: .7em;
+    }
+}
+
+@media (max-width: 768px){
+    .section_hero_about{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .img_balao_duvida{
+        margin: 20px;
+        width: 60vw;
+    }
+
+    .section_objetivo_about{
+        font-size: .9em;
+    }
+
+    /* School */
+    .school_text_about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section_school_about h2{
+        font-size: 1.5em;
+        max-width: 300px;
+    }
+    
+    .section_school_about p{
+        margin-top: -20px;
+        font-size: 1em;
+        font-weight: 400;
+        width: 300px;
+    }
+
+    /* Courses */
+    .courses_text_about{
+        text-align: center;
+    }
+
+    .courses_text_about span,
+    .courses_text_about li{
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 589px){
+    .component_text p{
+        font-size: 1.2em;
+    }
+    .component_text  h2{
+        font-size: 1.5em;
+    }
+
+    .section_objetivo_about{
+        font-size: .5em;
+    }
+    
+    /* images */
+    .img_balao_duvida{
+        width: 70vw;
+    }
+
+    .img_falling_books_about{
+        width: 70vw;
+    }
+
+    .img_books_and_apple{
+        width: 50vw;
+        height: 50vh;
+    }
+
+    .section_objetivo_about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 428px){
+    .section_objetivo_about{
+        font-size: .6em;
+    }
+
+    .img_books_and_apple{
+        width: 60vw;
+    }
+}
+
+@media (max-width: 390px){
+    .section_objetivo_about{
+        font-size: .5em;
+    }
+}

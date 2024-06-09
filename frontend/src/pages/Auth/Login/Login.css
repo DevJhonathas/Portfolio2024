@@ -1,0 +1,20 @@
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.container_login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.login{
+    background-color: #ABD9D9;
+    padding: 2.5em 4em;
+    max-width: 45%;
+    margin: 2em auto;
+}
+

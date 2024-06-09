@@ -1,0 +1,212 @@
+.container_home{
+    position: relative;
+}
+
+.section_hero_home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    flex-wrap: nowrap;
+    justify-content: space-between; 
+}
+
+.p_about_me{
+    margin-top: -5%;
+}
+
+.img_laptop{
+    max-width: 500px;
+}
+
+/* object */
+.section_object{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.section_object p{
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+/* School */
+.section_school{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+
+.falling_books{
+    max-width: 400px;
+}
+
+.school h3{
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.school h2{
+    font-size: 48px;
+    width: 600px;
+}
+.school p{
+    margin-top: -20px;
+    font-size: 24px;
+    font-weight: 400;
+    width: 600px;
+}
+
+/* Course */
+.section_courses{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10%;
+    color: #ffff;
+}
+
+.apple_with_books{
+    max-width: 400px;
+}
+
+.section_courses h3{
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.section_courses li{
+    list-style: none;
+}
+
+.section_courses span,
+.section_courses li{
+    font-size: 22px;
+}
+.section_courses span{
+    font-weight: 600;
+}
+
+.section_courses .bandeiras{
+    width: 20px;
+}
+
+/* Projects */
+.section_projects{
+    margin-top: 10%;
+}
+
+.section_projects h2{
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.section_projects p{
+    font-size: 80px;
+    font-weight: bold;
+    width: 600px
+}
+
+/* Responsividade */
+@media (max-width: 1650px){
+    .school h2{
+        font-size: 2em;
+        max-width: 30vw;
+    }
+
+    .school p{
+        max-width: 30vw;
+    }
+}
+
+@media (max-width: 1350px){
+    .section_hero_home{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .section_school{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .section_courses{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .my_objective p{
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 884px){
+    .falling_books,
+    .apple_with_books{
+        max-width: 400px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .p_about_me{
+        margin-top: -10%;
+    }
+}
+
+@media (max-width: 768px){
+    .p_about_me{
+        margin-top: 5%;
+    }
+}
+
+@media (max-width:589px){
+    .section_projects{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section_object{
+        align-items: center;
+    }
+}
+
+@media (max-width: 520px){
+    .img_laptop,
+    .apple_with_books,
+    .falling_books{
+        max-width: 300px;
+    }
+
+    .school h2{
+        font-size: 2em;
+        max-width: 50vw;
+    }
+
+    .school p{
+        max-width: 60vw;
+    }
+
+    .courses_list{
+        width: 80vw;
+    }
+}
+
+@media (max-width: 450px){
+    .p_about_me{
+        margin-top: 0%;
+    }
+}
+
+@media (max-width: 390px){
+    .section_projects h2{
+        font-size: 0px;
+    }
+}
