@@ -36,10 +36,10 @@ const PostProjects = () => {
               <h2 className='card-title'>{photo.title}</h2>
               <span className="card-description">{photo.description}</span>
               <ul className='card-list'>
-                <li>
+                <li className='card-list-text'>
                   <NavLink to={`/projects/${photo._id}`} className="card-buttons">Leia mais</NavLink>
                 </li>
-                <li><a href="https://github.com/DevJhonathas" className="card-buttons">Repositórios</a></li>
+                <li className='card-list-text'><a href="https://github.com/DevJhonathas" className="card-buttons">Repositórios</a></li>
               </ul>   
             </div>
           </article>
