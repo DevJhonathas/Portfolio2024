@@ -11,8 +11,13 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
 //Solve CORS
-app.use(cors({credentials: true, origin:"https://portfolio2024-e4t3.vercel.app"})); 
-
+app.use(cors({
+    origin: 'https://portfolio2024-e4t3.vercel.app',
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Métodos permitidos
+    allowedHeaders: ['Content-Type', 'Authorization'],    // Cabeçalhos permitidos
+    credentials: true                                     // Habilitar envio de cookies e credenciais
+  }));
+  
 app.use(express.json());  
 
 //Uploads
