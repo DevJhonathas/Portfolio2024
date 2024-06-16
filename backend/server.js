@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
 //Solve CORS
-app.use(cors({credentials: true, origin:`${process.env.PORT_FRONT}`})); 
+app.use(cors({credentials: true, origin:"https://portfolio2024-e4t3.vercel.app"})); 
 
 app.use(express.json());  
 
