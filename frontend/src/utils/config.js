@@ -1,6 +1,6 @@
-export const api = "portfolio2024-zbyj.onrender.com";
-export const uploads = "portfolio2024-zbyj.onrender.com/projects";
-export const photos_uploads = "portfolio2024-zbyj.onrender.com/uploads/"
+export const api = "https://portfolio2024-zbyj.onrender.com";
+export const uploads = "https://portfolio2024-zbyj.onrender.com/projects";
+export const photos_uploads = "https://portfolio2024-zbyj.onrender.com/uploads/"
 
 export const requestConfig = (method, data, token=null, image=null) => {
     let config;
