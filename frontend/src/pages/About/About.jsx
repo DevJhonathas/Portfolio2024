@@ -70,13 +70,13 @@ const About = () => {
             (Fevereiro de 2022) até (Fevereiro de 2024).</p>
         </div>
         <div >
-          <img src={falling_books} alt="falling_books" className="img_falling_books_about" />
+          <img src={falling_books} alt="falling_books" className="falling_books" />
         </div>
       </section>
 
       <section className="section_courses_about">
         <div>
-          <img src={apple_with_books} className="img_books_and_apple" alt="apple_with_books" />
+          <img src={apple_with_books} className="apple_with_books" alt="apple_with_books" />
         </div>
         <div className="subtitle courses_text_about">
             <ul className='courses_list'>

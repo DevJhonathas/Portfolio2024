@@ -6,7 +6,7 @@ import "./MessageWithButton.css";
 // React Router Dom
 import { NavLink } from 'react-router-dom';
 
-const Rentagulo_msg = ({msg, msg_button, msg_title, rota}) => {
+const Rentagulo_msg = ({msg, msg_button, msg_title, rota}) => {    
     return (
         <div className="component_text">
             <h2>{msg_title}</h2>

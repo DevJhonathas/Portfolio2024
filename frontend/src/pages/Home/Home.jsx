@@ -81,7 +81,7 @@ const Home = () => {
         <div className="courses form_container">
             <ul className='courses_list'>
               <div className="subtitle">
-                <h3>Cursos | idomas</h3>
+                <h3>Cursos | idiomas</h3>
               </div>
               <li><span>Full-stack</span> - Danki Code</li>
               <li><span>Web Designer</span> - Prepara cursos</li>

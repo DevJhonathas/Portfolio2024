@@ -22,11 +22,6 @@
 }
 
 /* School */
-.falling_books_about{
-    width: 20vw;
-    height: 50vh;
-}
-
 .section_school_about{
     display: flex;
     flex-direction: row;
@@ -45,10 +40,6 @@
     font-size: 1.8em;
     font-weight: 400;
     width: 600px;
-}
-
-.img_falling_books_about{
-    max-width: 400px;
 }
 
 /* Courses */
@@ -75,10 +66,6 @@
 
 .language_list .bandeiras{
     width: 20px;
-}
-
-.img_books_and_apple{
-    max-width: 400px;
 }
 
 /* Responsividade */
@@ -120,16 +107,9 @@
         flex-wrap: wrap;
         justify-content: center;
     }
-
-    .img_books_and_apple{
-        width: 40vw;
-        height: 50vh;
-        margin-bottom: 30px;
-        margin-top: 10%;
-    }
     
     .courses_text_about{
-        text-align: center;
+        text-align: start;
     }
 
     .section_projects h1{
@@ -183,7 +163,7 @@
 
     /* Courses */
     .courses_text_about{
-        text-align: center;
+        text-align: start;
     }
 
     .courses_text_about span,
@@ -209,15 +189,6 @@
         width: 70vw;
     }
 
-    .img_falling_books_about{
-        width: 70vw;
-    }
-
-    .img_books_and_apple{
-        width: 50vw;
-        height: 50vh;
-    }
-
     .section_objetivo_about{
         display: flex;
         flex-direction: column;
@@ -229,10 +200,6 @@
 @media (max-width: 428px){
     .section_objetivo_about{
         font-size: .6em;
-    }
-
-    .img_books_and_apple{
-        width: 60vw;
     }
 }
 

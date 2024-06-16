@@ -116,17 +116,25 @@
 @media (max-width: 884px) {
     .section_hero_projects{
         flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     
     .text_about_me p{
-        font-size: 2em;
+        font-size: 1.8em;
+        width: auto;
     }
 
-    /* section languages */;    
+    /* section languages */;        
     .paragrahp_languages{
         font-size:10em;
+    }
+    .img_languages ul{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        height: 100%;
+        width: 100%;
     }
     
     .img_languages li{
@@ -140,9 +148,9 @@
         width: 5vw;
     }
 
-    /* section database */;    
+    /* section database */;   
     .img_languages p{
-        font-size:0em;
+        font-size: 1em;
     }
     
     .img_database li{
@@ -154,5 +162,70 @@
     
     .img_database img{
         width: 5vw;
+    }
+
+    /* section projects */
+    .text_projects {
+        display: flex;        
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .text_projects p{
+        font-size: 1.5em;
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    /* section hero projects */
+    .text_about_me p{
+        font-size: 1.2em;
+    }
+
+    .img_laptop_projetos{
+        max-width: 200px;
+    }
+    
+    /* section languages */
+    .img_languages ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 100%;
+        width: 100%;
+    }
+    
+    .img_languages p{
+        font-size: 1.3em;
+    }
+    
+    .img_languages img{
+        width: 10vw;
+    }
+
+    /* section database*/
+    .img_database ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .img_database p{
+        font-size: 1.3em;
+    }
+   
+    .img_database img{
+        width: 10vw;
+    }
+
+    /* section projects */
+    .text_projects p{
+        font-size: 1.5em;
+        width: 80%;
+        text-align: center;
+    }
+
+    .text_projects span{
+        font-size: 2em;
     }
 }

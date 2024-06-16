@@ -22,13 +22,13 @@
 }
 
 @media (max-width: 1920px){
-    .messageText pre{
+    .messageText p{
         font-size: 1.2em;
     }
 }
 
 @media (max-width: 1440px){
-    .messageText pre{
+    .messageText p{
         font-size: 1.1em;
     }
 }
@@ -37,6 +37,10 @@
     .messageText{
         font-size: .9em;
     }
+
+    .messageText p{
+        font-size: 2em;
+    }
 }
 
 @media (max-width: 768px){
@@ -44,7 +48,7 @@
         height: 65vh;
     }
 
-    .messageText pre{
+    .messageText p{
         width: 60vw;
         font-size: 1.2em;
     }
@@ -55,32 +59,40 @@
         height: 55vh;
     }
 
-    .messageText pre{
+    .messageText p{
         width: 65vw;
-        font-size: 1.5em;
+        font-size: 2.2em;
     }
 }
 
 @media (max-width: 520px){
     .messageText{
         width: 80vw;
+        height: 45vh;
     }
 }
 
 @media (max-width: 428px){
     .messageText{
-        height: 65vh;
+        height: 52vh;
     }
 
-    .messageText pre{
+    .messageText p{
         font-size: 1.5em;
         width: 70vw;
     }
 }
 
 @media (max-width: 395px){
-    .messageText pre{
-        font-size: 1.7em;
+    .messageText p{
+        font-size: 1.8em;
+        width: 70vw;
+    }
+}
+
+@media (max-width: 385px){
+    .messageText p{
+        font-size: 2.5em;
         width: 70vw;
     }
 }
